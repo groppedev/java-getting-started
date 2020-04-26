@@ -1,8 +1,8 @@
 # Lezione 1 - Esercizio 1
 
 > Scrivere, compilare ed eseguire un semplice programma Java
-> Pensare ad un semplice programma che stampa nella console il messaggio:
-“Hello Java”
+
+> Pensare ad un semplice programma che stampa nella console il messaggio: “Hello Java”
 
 ### Passaggi da eseguire:
 - Scrivere il codice sorgente del programma con un editor di testo e salvare il file **.java**
