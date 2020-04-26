@@ -7,8 +7,11 @@
 ### Passaggi da eseguire:
 - Scrivere il codice sorgente del programma con un editor di testo e salvare il file **.java**
 - Procurarsi una JDK per compilare il programma Java tramite javac per ottenere il file **.class**
-- Eseguire tramite il comando java il file .class ottenuto dal processo di compilazione
-NOTE: Verrà utilizzato per il test l’ambiente “sandbox” offerto dal play-with-docker (E’ richiesto un account su DockerHub) La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
+- Eseguire tramite il comando java, il file .class ottenuto dal processo di compilazione.
+  
+### NOTE: 
+Verrà utilizzato per il test l’ambiente “sandbox” offerto dal play-with-docker (E’ richiesto un account su DockerHub).<br/>
+La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 
 ### Riferimenti:
 
