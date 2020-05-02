@@ -4,7 +4,7 @@
 
 <embed src="https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf" width="500" height="375" type="application/pdf">
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-7B6nKZLSBR4ivSG5trY_HSLDIlmPWlDXS8ZTgo8a8o26CvQZPPFp6oMsYy4t1L_I9htRaaerGmj1/embed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-7B6nKZLSBR4ivSG5trY_HSLDIlmPWlDXS8ZTgo8a8o26CvQZPPFp6oMsYy4t1L_I9htRaaerGmj1/embed?start=false&loop=true&delayms=3000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 [WEBSITE VERSION](https://groppedev.github.io/java-getting-started/)
 
