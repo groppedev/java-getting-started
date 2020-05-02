@@ -1,16 +1,5 @@
 ## Welcome to GitHub Pages
 
-[PDF EMBEDDED](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
-
-<embed src="https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf" width="500" height="375" type="application/pdf">
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-7B6nKZLSBR4ivSG5trY_HSLDIlmPWlDXS8ZTgo8a8o26CvQZPPFp6oMsYy4t1L_I9htRaaerGmj1/embed?start=false&loop=true&delayms=3000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-[WEBSITE VERSION](https://groppedev.github.io/java-getting-started/)
-
-Nuovo link di test: 
-[Readme 2 link](README2.md)
-
 Lezione 1 - Esercizio 1:
 [Esercizio 1 - Lezione 1](src/main/java/it/groppedev/lesson1/exercise1/README.md) 
 
@@ -49,3 +38,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+<!-- Esempi di risorse Embedded-->
+
+<!--<embed src="https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf" width="500" height="375" type="application/pdf">-->
+
+<!--<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-7B6nKZLSBR4ivSG5trY_HSLDIlmPWlDXS8ZTgo8a8o26CvQZPPFp6oMsYy4t1L_I9htRaaerGmj1/embed?start=false&loop=true&delayms=3000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>-->
