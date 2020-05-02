@@ -15,7 +15,9 @@ public class HelloJava
     System.out.println("Hello Java!");
   }
 }
-```java
+```
+
+```markdown
 Syntax highlighted code block
 
 # Header 1
