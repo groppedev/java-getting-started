@@ -3,10 +3,13 @@
 ## Lezione 1
 
 ## Esercizi
+
 ### Esercizio 1
-[Dettaglio](exercize1/README.md)
+[Dettaglio](exercise1/README.md)
 ### Esercizio 2
+[Dettaglio](exercise1/README.md)
 ### Esercizio 3
+[Dettaglio](exercise1/README.md)
 
 ```java
 public class HelloJava
