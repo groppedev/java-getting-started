@@ -1,5 +1,9 @@
 ## Welcome to GitHub Pages
 
+[PDF EMBEDDED](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
+
+<embed src="https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf" width="500" height="375" type="application/pdf">
+
 [WEBSITE VERSION](https://groppedev.github.io/java-getting-started/)
 
 Nuovo link di test: 
