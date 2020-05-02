@@ -1,6 +1,6 @@
 @import "{{ site.theme }}";
 
-a.button.fork
-{
-  display :none;
+/* Rimozione bottone: "View me on GitHub"*/
+a.button.fork {
+    display: none !important;
 }
