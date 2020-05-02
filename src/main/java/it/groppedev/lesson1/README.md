@@ -4,6 +4,7 @@
 
 ## Esercizi
 ### Esercizio 1
+[Dettaglio](exercize1/README.md)
 ### Esercizio 2
 ### Esercizio 3
 
