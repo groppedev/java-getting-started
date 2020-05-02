@@ -4,6 +4,8 @@
 
 <embed src="https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf" width="500" height="375" type="application/pdf">
 
+<embed src="https://docs.google.com/presentation/d/1eqs28xx_H_cAQ4w4qjw2yutUX27wZdFBfFd6VvsTv9s/edit?usp=sharing" width="500" height="375">
+
 [WEBSITE VERSION](https://groppedev.github.io/java-getting-started/)
 
 Nuovo link di test: 
