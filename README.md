@@ -1,8 +1,9 @@
 ## Welcome to GitHub Pages
 
+Nuovo link di test: 
 [Readme 2 link](README2.md)
 
-You can use the [editor on GitHub](https://github.com/groppedev/java-getting-started/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+YYou can use the [editor on GitHub](https://github.com/groppedev/java-getting-started/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
