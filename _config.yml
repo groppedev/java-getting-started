@@ -1,4 +1,6 @@
 theme: jekyll-theme-leap-day
+title: [The title of your site]
+description: [A short description of your site's purpose]
 plugins:
   - jekyll-relative-links
 relative_links:
