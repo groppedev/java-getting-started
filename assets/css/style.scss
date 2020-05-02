@@ -1,1 +1,6 @@
-xx
+@import "{{ site.theme }}";
+
+a.button.fork
+{
+  display :none;
+}
