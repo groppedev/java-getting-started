@@ -56,6 +56,7 @@ public class HelloJava
 ```console
 HelloJava.java: C source, ASCII text
 ```
+9. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloJava.java` per ottenere il file `HelloJava.class` composto da `bytecode`
 
 ### Riferimenti:
 
