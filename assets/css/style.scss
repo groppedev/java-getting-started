@@ -1,9 +1,6 @@
 @import "{{ site.theme }}";
-
+a.button.fork {  display: none !important; }
 /* Rimozione bottone: "View me on GitHub" */
-a.button.fork {
-    display: none !important;
-}
 
 /* Rimozione di tutto il banner relativo a GitHub */
 div#banner {
