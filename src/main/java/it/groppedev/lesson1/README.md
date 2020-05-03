@@ -9,7 +9,7 @@
 ### Esercizio 2
 [Dettaglio](exercise2/README.md)
 ### Esercizio 3
-[Dettaglio](exercise2/README.md)
+[Dettaglio](exercise3/README.md)
 
 ```java
 public class HelloJava
