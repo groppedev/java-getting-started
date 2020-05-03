@@ -58,6 +58,32 @@ HelloJava.java: C source, ASCII text
 ```
 9. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloJava.java` per ottenere il file `HelloJava.class` composto da `bytecode`
 
+10. Eseguire il comando `file HelloJava.class`, per verificare la tipologia del file appena creato. E' possibile notare che il file con estensione `.class` viene riconosciuto come file compilato per la versione `Java 1.8 (52.0)`
+```console
+HelloJava.class: compiled Java class data, version 52.0 (Java 1.8)
+```
+11. Utilizzare il `disassemblatore(disassembler)` che è uno strumento messo a disposizione dalla JDK per analizzare il `bytecode` prodotto e salvato nel file `.class`. Un `disassemblatore(disassembler)` differisce da un `decompilatore(decompiler)` perché opera a più basso livello, per il linguaggio Java un decompilatore è in grado di covertire un file `.class` in un file `.java`
+Eseguire quindi il comando `javap -c HelloJava.class` per poter visualizzare il seguente output
+
+```console
+Compiled from "HelloJava.java"
+public class HelloJava {
+  public HelloJava();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #3                  // String Hello Java!
+       5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       8: return
+}
+```
+
+
 ### Riferimenti:
 
 - [DockerHub][dockerhub]
