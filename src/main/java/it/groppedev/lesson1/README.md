@@ -7,9 +7,9 @@
 ### Esercizio 1
 [Dettaglio](exercise1/README.md)
 ### Esercizio 2
-[Dettaglio](exercise1/README.md)
+[Dettaglio](exercise2/README.md)
 ### Esercizio 3
-[Dettaglio](exercise1/README.md)
+[Dettaglio](exercise2/README.md)
 
 ```java
 public class HelloJava
