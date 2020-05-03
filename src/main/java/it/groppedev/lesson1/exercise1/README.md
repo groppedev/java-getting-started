@@ -97,6 +97,9 @@ public class HelloJava {
 Hello Java!
 ```
 
+![Approfondimento][duke_cheers]
+
+
 ### Riferimenti:
 
 - [DockerHub][dockerhub]
@@ -121,6 +124,7 @@ Hello Java!
 [magnifying_glass_48]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/48x48/Magnifier2.png>
 [magnifying_glass_32]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/32x32/Magnifier2.png>
 [magnifying_glass_24]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/24x24/Magnifier2.png>
+[duke_cheers]: <http://cr.openjdk.java.net/~jeff/Duke/png/DukeCheers.png>
 
 <!-- Definizione dei link -->
 [dockerhub]: <https://hub.docker.com/>
