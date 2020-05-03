@@ -43,7 +43,7 @@ Syntax highlighted code block
 
 <!-- Link per tornare alla pagina principale -->
 <!-- Link per tornare alla Lezione 1 -->
-![Home](http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png)
+![Home](http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png)(https://groppedev.github.io/java-getting-started/)
 ![Lezione 1](http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png)<br/>
 <br/>
 [Home](https://groppedev.github.io/java-getting-started/)
