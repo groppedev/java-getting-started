@@ -1,4 +1,4 @@
-# Corso Java Base
+# Benvenuto
 ![Duke][img_duke_open]
 ## Elenco Lezioni
 - [Lezione 1](src/main/java/it/groppedev/lesson1/README.md) 
@@ -8,5 +8,5 @@
 [Duke Gallery][href_duke_gallery]
 
 <!-- Link alle immagini -->
-[img_duke_open]: <src/main/resources/images/duke/duke_open.png>
+[img_duke_open]: <src/main/resources/images/duke/duke_open_small.png>
 [href_duke_gallery]: <https://wiki.openjdk.java.net/display/duke/Gallery>
