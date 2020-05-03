@@ -118,6 +118,7 @@ public class HelloJava {
 ```console
 Ciao, sono JAVA ed ho 25 anni!
 ```
+***
 ![Duke](../../../../../resources/images/duke/duke_cheers.png)
 
 ### Riferimenti:
