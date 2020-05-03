@@ -16,7 +16,7 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 
 # Proposta di soluzione
 
-1. Accedere al sito https://labs.play-with-docker.com/ utilizzando le proprie credenziali DockerHub (https://hub.docker.com/) <br/> <br/>
+1. Accedere al sito [Play With Docker][playwithdocker] utilizzando le proprie credenziali di [Docker Hub][dockerhub] <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_50.png)
 2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE` <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-4_50.png)
@@ -34,7 +34,7 @@ c11c60358e5d: Pull complete
 Digest: sha256:819d40751652460eeac6eb55fa8eeea467289dd7f2b707da3d72e3b4cf9a0457
 Status: Downloaded newer image for groppedocker/centos-openjdk:jdk-8u242
 ```
-![Approfondimento][magnifying_glass_24] Documentazione ufficiale di `Docker`: https://docs.docker.com/get-started/ <br/>
+![Approfondimento][magnifying_glass_24] [Documentazione ufficiale][dockerdocs] di `Docker`<br/>
 
 4. Opzionalmente utilizzando lo shortcut `ALT + ENTER` è possibile massimizzare la finestra della console <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-5_50.png)
@@ -131,6 +131,7 @@ Hello Java!
 
 <!-- Definizione dei link -->
 [dockerhub]: <https://hub.docker.com/>
+[dockerdocs]: <https://docs.docker.com/get-started/>
 [groppedockerjdk]: <https://hub.docker.com/r/groppedocker/centos-openjdk>
 [playwithdocker]: <https://labs.play-with-docker.com/>
 <!-- Tabella commentata -->
