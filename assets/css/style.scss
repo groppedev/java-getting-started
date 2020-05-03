@@ -4,3 +4,8 @@
 a.button.fork {
     display: none !important;
 }
+
+/* Rimozione di tutto il banner relativo a GitHub*/
+div#banner {
+    display: none !important;
+}
