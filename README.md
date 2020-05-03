@@ -1,9 +1,9 @@
 ## Welcome to GitHub Pages
 
 ### Lezioni
-[Lezione 1](src/main/java/it/groppedev/lesson1/README.md) 
-[Lezione 2](src/main/java/it/groppedev/lesson2/README.md) 
-[Lezione 2](src/main/java/it/groppedev/lesson3/README.md) 
+- [Lezione 1](src/main/java/it/groppedev/lesson1/README.md) 
+- [Lezione 2](src/main/java/it/groppedev/lesson2/README.md) 
+- [Lezione 3](src/main/java/it/groppedev/lesson3/README.md) 
 
 YYou can use the [editor on GitHub](https://github.com/groppedev/java-getting-started/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
