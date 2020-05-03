@@ -1,6 +1,6 @@
 theme: jekyll-theme-leap-day
-title: [The title of your site]
-description: [A short description of your site's purpose]
+title: Corso Java Base
+description: Collezione di esercizi e tutorial per apprendere il linguaggio di programmazione Java
 plugins:
   - jekyll-relative-links
 relative_links:
