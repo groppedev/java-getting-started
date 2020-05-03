@@ -42,7 +42,7 @@ OpenJDK Runtime Environment (build 1.8.0_242-b08)
 OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
 ```
 6. Creare un nuovo file chiamato `HelloJava.java` utilizzando il comando `vi HelloJava.java`
-7. Incollare nel file il seguente codice sorgente Java, entrando in modalità `INSERT` va premuto il tasto `i`, una volta incollato il codice sorgente digitare il comando `:x` per salvare il file
+7. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file
 ```java
 public class HelloJava
 {
