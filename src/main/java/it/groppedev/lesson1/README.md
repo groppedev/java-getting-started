@@ -42,6 +42,7 @@ Syntax highlighted code block
 ```
 This is an [example link](http://example.com/ "With a Title").
 
+***
 [![Home][img_home]][href_home]
 
 <!-- Definizione dei link -->
