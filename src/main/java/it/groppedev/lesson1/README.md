@@ -49,5 +49,8 @@ Syntax highlighted code block
 [Home](https://groppedev.github.io/java-getting-started/)
 [Lezione 1](https://groppedev.github.io/java-getting-started/)
 
+Test immagine con link
+[![Home](http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png)](https://groppedev.github.io/java-getting-started/)
+
 
 [Lezione 1](https://groppedev.github.io/java-getting-started/)
