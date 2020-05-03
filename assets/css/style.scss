@@ -1,12 +1,4 @@
 @import "{{ site.theme }}";
-a.button.fork {  display: none !important; }
-/* Rimozione bottone: "View me on GitHub" */
-
-/* Rimozione di tutto il banner relativo a GitHub */
-div#banner {
-    display: none !important;
-}
-
 /* Rimozione del footre */
 footer {
     display: none !important;
