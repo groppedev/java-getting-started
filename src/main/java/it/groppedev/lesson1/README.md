@@ -42,9 +42,12 @@ Syntax highlighted code block
 ```
 
 <!-- Link per tornare alla pagina principale -->
-![Home](http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png)<br/>
-[Home](https://groppedev.github.io/java-getting-started/)
-
 <!-- Link per tornare alla Lezione 1 -->
-![Lezione 1](http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/64x64/Books.png)<br/>
+![Home](http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png)
+![Lezione 1](http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png)<br/>
+<br/>
+[Home](https://groppedev.github.io/java-getting-started/)
+[Lezione 1](https://groppedev.github.io/java-getting-started/)
+
+
 [Lezione 1](https://groppedev.github.io/java-getting-started/)
