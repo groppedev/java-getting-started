@@ -16,10 +16,10 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 
 # Proposta di soluzione
 
-1. Accedere al sito [Play With Docker][playwithdocker] utilizzando le proprie credenziali di [Docker Hub][dockerhub] <br/> <br/>
-![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_50.png)
+1. Accedere al sito [Play With Docker][playwithdocker] utilizzando le proprie credenziali di [Docker Hub][dockerhub] <br/><br/>
+![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_50.png) <br/>
 2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE` <br/> <br/>
-![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-4_50.png)
+![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-4_50.png) <br/>
 3. Avviare l'immagine Docker con OpenJDK eseguendo il comando `docker run -it groppedocker/centos-openjdk:jdk-8u242` <br/><br/>
 ```console
 Unable to find image 'groppedocker/centos-openjdk:jdk-8u242' locally
@@ -67,7 +67,7 @@ public class HelloJava
 ```console
 HelloJava.java: C source, ASCII text
 ```
-9. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloJava.java` per ottenere il file `HelloJava.class` composto da `bytecode` <br/><br/>
+9. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloJava.java` per ottenere il file `HelloJava.class` composto da `bytecode` <br/>
 
 10. Eseguire il comando `file HelloJava.class`, per verificare la tipologia del file appena creato. E' possibile notare che il file con estensione `.class` viene riconosciuto come file compilato per la versione `Java 1.8 (52.0)` <br/><br/>
 ```console
@@ -114,8 +114,7 @@ public static void main(java.lang.String[]);
 ![Approfondimento][magnifying_glass_24] [Documentazione][javapdocs] `javap` <br/>
 ![Approfondimento][magnifying_glass_24] [Documentazone][jdktoolsdocs] completa per `JDK Tools and Utilities`
 
-12. Eseguire il programma `HelloJava` digitando il comando `java HelloJava` ottenendo il seguente risultato a video <br/><br/>
-
+12. Eseguire il programma `HelloJava` digitando il comando `java HelloJava` ottenendo il seguente risultato a video <br/>
 ```console
 Ciao, sono JAVA ed ho 25 anni!
 ```
