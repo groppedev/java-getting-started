@@ -86,7 +86,7 @@ public class HelloJava {
 ```
 ![Approfondimento][magnifying_glass_32] Elenco delle istruzioni del `bytecode`: https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5 <br/>
 ![Approfondimento][magnifying_glass_32] Documentazione `javap`: https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html <br/>
-![Approfondimento][magnifying_glass_32] In generale documentazione per `JDK Tools and Utilities`: https://docs.oracle.com/javase/8/docs/technotes/tools/#troubleshoot
+![Approfondimento][magnifying_glass_32] In generale per `JDK Tools and Utilities`: https://docs.oracle.com/javase/8/docs/technotes/tools/#troubleshoot
 
 12. Eseguire il programma HelloJava digitando il comando `java HelloJava` ottenendo il seguente risultato a video
 ```console
@@ -116,6 +116,7 @@ Hello Java!
 [img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
 [magnifying_glass_48]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/48x48/Magnifier2.png>
 [magnifying_glass_32]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/32x32/Magnifier2.png>
+[magnifying_glass_24]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/24x24/Magnifier2.png>
 
 <!-- Definizione dei link -->
 [dockerhub]: <https://hub.docker.com/>
