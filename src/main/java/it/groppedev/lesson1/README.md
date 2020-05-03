@@ -54,3 +54,7 @@ Test immagine con link
 
 
 [Lezione 1](https://groppedev.github.io/java-getting-started/)
+
+<!-- Definizione dei link -->
+[img_home]: <http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png>
+[img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
