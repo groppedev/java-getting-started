@@ -44,11 +44,6 @@ This is an [example link](http://example.com/ "With a Title").
 
 ***
 [![Home][img_home]][href_home]
-
-<!-- Definizione dei link -->
-[dockerhub]: <https://hub.docker.com/>
-[groppedockerjdk]: <https://hub.docker.com/r/groppedocker/centos-openjdk>
-[playwithdocker]: <https://labs.play-with-docker.com/>
 <!-- Definizione dei link per la navigazione -->
 [img_home]: <../../../../../resources/images/navigation/home.png>
 [href_home]: <https://groppedev.github.io/java-getting-started/>
