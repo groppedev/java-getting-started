@@ -19,6 +19,7 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 1. Accedere al sito https://labs.play-with-docker.com/ utilizzando le proprie credenziali GitHub
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_50.png)
 2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE`
+![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-4_50.png)
 3. Avviare l'immagine Docker con OpenJDK eseguendo il comando `docker run -it groppedocker/centos-openjdk:jdk-8u242`
 ```console
 Unable to find image 'groppedocker/centos-openjdk:jdk-8u242' locally
@@ -40,7 +41,8 @@ openjdk version "1.8.0_242"
 OpenJDK Runtime Environment (build 1.8.0_242-b08)
 OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
 ```
-6. Creare 
+6. Creare un nuovo file chiamato `HelloJava.java` utilizzando il comando `vi HelloJava.java`
+7. Incollare nel file il seguente codice sorgente Java, entrando in modalità `INSERT` va premuto il tasto `i`, una volta incollato il codice sorgente digitare il comando `:x` per salvare il file
 ```java
 public class HelloJava
 {
