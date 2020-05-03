@@ -61,7 +61,7 @@ public class HelloJava
 	}
 }
 ```
-![Approfondimento][magnifying_glass_24] Documentazione per l'editor di testo `VIM`: https://vimhelp.org/usr_toc.txt.html <br/>
+![Approfondimento][magnifying_glass_24] [Documentazione][vimdocs] per l'editor di testo `VIM`<br/>
 
 8. Eseguire il comando `file HelloJava.java`, per verificare la tipologia del file appena creato. E' possibile notare che il codice sorgente Java è un semplice file testuale
 ```console
@@ -93,9 +93,9 @@ public class HelloJava {
        8: return
 }
 ```
-![Approfondimento][magnifying_glass_24] Elenco delle istruzioni del `bytecode`: https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5 <br/>
-![Approfondimento][magnifying_glass_24] Documentazione `javap`: https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html <br/>
-![Approfondimento][magnifying_glass_24] In generale per `JDK Tools and Utilities`: https://docs.oracle.com/javase/8/docs/technotes/tools/#troubleshoot
+![Approfondimento][magnifying_glass_24] [Elenco delle istruzioni][bytecodedocs] del `bytecode`
+![Approfondimento][magnifying_glass_24] [Documentazione][javapdocs] `javap` <br/>
+![Approfondimento][magnifying_glass_24] [Documentazone][jdktoolsdocs] completa per `JDK Tools and Utilities`
 
 12. Eseguire il programma `HelloJava` digitando il comando `java HelloJava` ottenendo il seguente risultato a video
 ```console
@@ -134,6 +134,11 @@ Hello Java!
 [dockerdocs]: <https://docs.docker.com/get-started/>
 [groppedockerjdk]: <https://hub.docker.com/r/groppedocker/centos-openjdk>
 [playwithdocker]: <https://labs.play-with-docker.com/>
+[vimdocs]: <https://vimhelp.org/usr_toc.txt.html>
+[bytecodedocs]: <https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5>
+[javapdocs]: <https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html>
+[jdktoolsdocs]: <https://docs.oracle.com/javase/8/docs/technotes/tools/#troubleshoot>
+
 <!-- Tabella commentata -->
 <!--| First Header  | Second Header |-->
 <!--| ------------- | ------------- |-->
