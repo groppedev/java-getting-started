@@ -139,7 +139,7 @@ Ciao, sono JAVA ed ho 25 anni!
 [href_home]: <https://groppedev.github.io/java-getting-started/>
 [img_lesson]: <../../../../../resources/images/navigation/books.png>
 [href_lesson]: <../>
-[magnifying_glass_24]: <../../../../../magnifier.png>
+[magnifying_glass_24]: <../../../../../resources/images/navigation/magnifier.png>
 
 <!-- Definizione dei link -->
 [dockerhub]: <https://hub.docker.com/>
