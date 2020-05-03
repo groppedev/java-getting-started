@@ -1,7 +1,7 @@
 # Lezione 1 - Esercizio 1
  
 > Scrivere, compilare ed eseguire il primo programma scritto in Java
-> <br/>Pensare ad un semplice programma che stampa nella console il messaggio: “Hello Java”
+> <br/>Pensare ad un semplice programma che stampa nella console un messaggio di benvenuto indicando l'età del linguaggio Java
 > <br/>Eseguire il processo completo di scrittura del codice sorgente, produzione del bytecode ed esecuzione del programma cercando di capirne in modo chiaro il funzionamento, passaggio per passaggio
 
 ### Passaggi da eseguire:
@@ -50,10 +50,15 @@ OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
 ```java
 public class HelloJava
 {
-  public static void main(String[] args)
-  {
-    System.out.println("Hello Java!");
-  }
+	private static final int JAVA_YEAR_OF_BIRTH = 1995;
+	
+	public static void main(String[] args)
+	{
+		int currentYear = java.time.Year.now().getValue();
+		int javaAge = currentYear - JAVA_YEAR_OF_BIRTH;
+		
+		System.out.println(String.format("Ciao, sono JAVA ed ho %d anni!", javaAge));
+	}
 }
 ```
 ![Approfondimento][magnifying_glass_24] Documentazione per l'editor di testo `VIM`: https://vimhelp.org/usr_toc.txt.html <br/>
