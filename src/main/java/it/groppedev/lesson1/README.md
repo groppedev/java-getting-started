@@ -42,7 +42,7 @@ Syntax highlighted code block
 ```
 This is an [example link](http://example.com/ "With a Title").
 
-[![Home][img_home]][href_home "Torna alla pagina principale 3"]
+[![Home][img_home]][href_home]
 
 <!-- Definizione dei link -->
 [img_home]: <http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png "Torna alla pagina principale 2">
