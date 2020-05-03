@@ -30,7 +30,7 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 [![Lesson1][img_lesson]][img_lesson1]
 
 <!-- Definizione dei link per la navigazione-->
-[href_home]: </README.md>
+[href_home]: <https://groppedev.github.io/java-getting-started/>
 [img_lesson1]: <../README.md>
 
 [img_home]: <http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png>
