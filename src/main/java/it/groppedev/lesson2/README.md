@@ -1,10 +1,10 @@
 # Lezione 2
 
-![wip][img_wip]
-
+![Duke][duke_think_small]
 ***
 [![Home][img_home]][href_home]
 
+[duke_think_small]: <../../../../resources/images/duke/duke_think_small.png>
 <!-- Definizione dei link per la navigazione -->
 [img_wip]: <../../../../resources/images/commons/workinprogress.png>
 [img_home]: <../../../../resources/images/navigation/home.png>
