@@ -2,7 +2,7 @@
  
 > Scrivere, compilare ed eseguire un semplice programma Java
 > <br/>Pensare ad un semplice programma che stampa nella console il messaggio: “Hello Java”
-> <br/>Eseguire il processo completo di scrittura del codice sorgente, produzione del bytecode ed esecuzione del programma
+> <br/>Eseguire il processo completo di scrittura del codice sorgente, produzione del bytecode ed esecuzione del programma cercando di capirne in modo chiaro il funzionamento
 
 ### Passaggi da eseguire:
 1. Scrivere il codice sorgente del programma con un editor di testo e salvare il file **.java**
