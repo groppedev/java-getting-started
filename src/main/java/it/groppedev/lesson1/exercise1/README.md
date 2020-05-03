@@ -31,7 +31,7 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 
 <!-- Definizione dei link per la navigazione-->
 [href_home]: </README.md>
-[img_lesson1]: </src/main/java/it/groppedev/lesson1/README.md>
+[img_lesson1]: <../../../../../lesson1/README.md>
 [img_lesson2]: </src/main/java/it/groppedev/lesson2/README.md>
 [img_lesson3]: </src/main/java/it/groppedev/lesson3/README.md>
 
