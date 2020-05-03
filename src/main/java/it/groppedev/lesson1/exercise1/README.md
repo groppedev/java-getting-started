@@ -78,6 +78,36 @@ Eseguire quindi il comando `javap -c HelloJava.class` per poter visualizzare il 
 ```console
 Compiled from "HelloJava.java"
 ```
+```console
+public HelloJava();
+    Code:
+       0: aload_0
+       1: invokespecial #1   // Method java/lang/Object."<init>":()V
+       4: return
+```
+```console
+public static void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #2   // Method java/time/Year.now:()Ljava/time/Year;
+       3: invokevirtual #3   // Method java/time/Year.getValue:()I
+       6: istore_1
+       7: iload_1
+       8: sipush        1995
+      11: isub
+      12: istore_2
+      13: getstatic     #5   // Field java/lang/System.out:Ljava/io/PrintStream;
+      16: ldc           #6   // String Ciao, sono JAVA ed ho %d anni!
+      18: iconst_1
+      19: anewarray     #7   // class java/lang/Object
+      22: dup
+      23: iconst_0
+      24: iload_2
+      25: invokestatic  #8   // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      28: aastore
+      29: invokestatic  #9   // Method java/lang/String.format:(LString;[LObject;)LString;
+      32: invokevirtual #10  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      35: return
+```
 ![Approfondimento][magnifying_glass_24] [Elenco delle istruzioni][bytecodedocs] del `bytecode` <br/>
 ![Approfondimento][magnifying_glass_24] [Documentazione][javapdocs] `javap` <br/>
 ![Approfondimento][magnifying_glass_24] [Documentazone][jdktoolsdocs] completa per `JDK Tools and Utilities`
