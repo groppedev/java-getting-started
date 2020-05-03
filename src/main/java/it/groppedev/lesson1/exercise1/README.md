@@ -56,6 +56,8 @@ public class HelloJava
   }
 }
 ```
+![Approfondimento][magnifying_glass_24] Documentazione ufficiale per l'editor di testo `VIM`: https://vimhelp.org/usr_toc.txt.html <br/>
+
 8. Eseguire il comando `file HelloJava.java`, per verificare la tipologia del file appena creato. E' possibile notare che il codice sorgente Java è un semplice file testuale
 ```console
 HelloJava.java: C source, ASCII text
