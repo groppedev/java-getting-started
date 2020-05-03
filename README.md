@@ -8,5 +8,5 @@
 [Duke Gallery][href_duke_gallery]
 
 <!-- Link alle immagini -->
-[img_duke_open]: <src/resources/images/duke/duke_open.png>
+[img_duke_open]: <src/main/resources/images/duke/duke_open.png>
 [href_duke_gallery]: <https://wiki.openjdk.java.net/display/duke/Gallery>
