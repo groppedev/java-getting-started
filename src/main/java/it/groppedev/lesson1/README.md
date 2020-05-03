@@ -41,6 +41,8 @@ Syntax highlighted code block
 [Link](url) and 
 ```
 
+Torna alla Pagina Principale [![Home][img_home]][href_home]
+
 <!-- Link per tornare alla pagina principale -->
 <!-- Link per tornare alla Lezione 1 -->
 ![Home](http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png)(https://groppedev.github.io/java-getting-started/)
@@ -50,11 +52,18 @@ Syntax highlighted code block
 [Lezione 1](https://groppedev.github.io/java-getting-started/)
 
 Test immagine con link
-[![Home](http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png)](https://groppedev.github.io/java-getting-started/)
 
 
-[Lezione 1](https://groppedev.github.io/java-getting-started/)
+
+
+
+
+- [DockerHub][dockerhub]
+
+[dockerhub]: <https://hub.docker.com/>
 
 <!-- Definizione dei link -->
 [img_home]: <http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png>
+[href_home]: <https://groppedev.github.io/java-getting-started/>
 [img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
+
