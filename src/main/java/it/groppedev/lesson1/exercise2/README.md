@@ -44,8 +44,26 @@ public class HelloPeople
 }
 ```
 4. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloPeople.java` per ottenere il file `HelloPeople.class` composto da `bytecode` <br/>
-5. 
-
+5. Eseguire il programma `HelloPeople` digitando il comando `java -Duser.language=it HelloPeople Marco Massimo Matteo` ottenendo il seguente risultato a video
+```console
+Ciao Marco, sono JAVA ed ho 25 anni!
+Ciao Massimo, sono JAVA ed ho 25 anni!
+Ciao Matteo, sono JAVA ed ho 25 anni!
+```
+6. Eseguire nuovamente il programma `HelloPeople`, ma impostando una lingua differente da IT (ES: EN). Digitare il comando `java -Duser.language=en HelloPeople Marco Massimo Matteo` per ottenere il seguente risultato a video
+```console
+Hello Marco, I am JAVA and I am 25 years old!
+Hello Massimo, I am JAVA and I am 25 years old!
+Hello Matteo, I am JAVA and I am 25 years old!
+```
+6. Eseguire un'ultima volta il programma `HelloPeople`, impostando ulteriori persone da salutare. Digitare il comando `java -Duser.language=it HelloPeople Marco Massimo Matteo Luca Giovanni` per ottenere il seguente risultato a video
+```console
+Ciao Marco, sono JAVA ed ho 25 anni!
+Ciao Massimo, sono JAVA ed ho 25 anni!
+Ciao Matteo, sono JAVA ed ho 25 anni!
+Ciao Luca, sono JAVA ed ho 25 anni!
+Ciao Giovanni, sono JAVA ed ho 25 anni!
+```
 ***
 [![Home][img_home]][href_home]
 [![Lesson1][img_lesson]][href_lesson]
