@@ -16,7 +16,7 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 
 # Proposta di soluzione
 
-1. Accedere al sito https://labs.play-with-docker.com/ utilizzando le proprie credenziali GitHub <br/> <br/>
+1. Accedere al sito https://labs.play-with-docker.com/ utilizzando le proprie credenziali DockerHub (https://hub.docker.com/) <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_50.png)
 2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE` <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-4_50.png)
