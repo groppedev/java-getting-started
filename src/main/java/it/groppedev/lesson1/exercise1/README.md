@@ -16,9 +16,9 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 
 # Proposta di soluzione
 
-1. Accedere al sito https://labs.play-with-docker.com/ utilizzando le proprie credenziali GitHub
+1. Accedere al sito https://labs.play-with-docker.com/ utilizzando le proprie credenziali GitHub <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_50.png)
-2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE`
+2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE` <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-4_50.png)
 3. Avviare l'immagine Docker con OpenJDK eseguendo il comando `docker run -it groppedocker/centos-openjdk:jdk-8u242`
 ```console
@@ -51,6 +51,10 @@ public class HelloJava
     System.out.println("Hello Java!");
   }
 }
+```
+8. Eseguire il comando `file HelloJava.java`, per verificare la tipologia del file appena creato. E' possibile notare che il codice sorgente Java è un semplice file testuale
+```console
+HelloJava.java: C source, ASCII text
 ```
 
 ### Riferimenti:
