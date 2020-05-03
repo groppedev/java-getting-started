@@ -1,5 +1,12 @@
 # Lezione 1 - Esercizio 2
 
+> Partendo dall'esercizio 1, per ogni nome di persona fornito in input, produrre un saluto da stampare in console nella lingua speficata dalle proprietà di sistema
+
+### Passaggi da eseguire:
+1. Scrivere il codice sorgente del programma con un editor di testo e salvare il file **.java**
+2. Utilizzare una JDK per compilare il programma Java tramite il comando `javac` per ottenere il file **.class**
+3. Utilizzare una JRE per eseguire il programma Java compilato (il file **.class**) tramite il comando `java` per ottenere l'output del programma in console. Devono essere forniti dei parametri di input e una proprietà di sistema che indica il linguaggio da utilizzare.
+
 ***
 [![Home][img_home]][href_home]
 [![Lesson1][img_lesson]][href_lesson]
