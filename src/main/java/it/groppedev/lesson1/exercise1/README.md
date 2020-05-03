@@ -20,14 +20,16 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 - [Immagini Docker JDK e JRE][groppedockerjdk]
 - [Play With Docker][playwithdocker]
 
-[dockerhub]: <https://hub.docker.com/>
-[groppedockerjdk]: <https://hub.docker.com/r/groppedocker/centos-openjdk>
-[playwithdocker]: <https://labs.play-with-docker.com/>
 
+
+***
 [![Home][img_home]][href_home]
 [![Lesson1][img_lesson]][img_lesson1]
 
-<!-- Definizione dei link -->
+[dockerhub]: <https://hub.docker.com/>
+[groppedockerjdk]: <https://hub.docker.com/r/groppedocker/centos-openjdk>
+[playwithdocker]: <https://labs.play-with-docker.com/>
+<!-- Definizione dei link per la navigazione -->
 [img_home]: <http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png>
 [href_home]: <https://groppedev.github.io/java-getting-started/>
 [img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
