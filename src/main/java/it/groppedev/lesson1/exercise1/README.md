@@ -77,6 +77,7 @@ HelloJava.class: compiled Java class data, version 52.0 (Java 1.8)
 Eseguire quindi il comando `javap -c HelloJava.class` per poter visualizzare il seguente output in `bytecode` <br/><br/>
 ```console
 Compiled from "HelloJava.java"
+public class HelloJava
 ```
 ```console
 public HelloJava();
