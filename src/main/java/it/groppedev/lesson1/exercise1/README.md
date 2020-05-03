@@ -114,15 +114,13 @@ public static void main(java.lang.String[]);
 ![Approfondimento][magnifying_glass_24] [Documentazione][javapdocs] `javap` <br/>
 ![Approfondimento][magnifying_glass_24] [Documentazone][jdktoolsdocs] completa per `JDK Tools and Utilities`
 
-12. Eseguire il programma `HelloJava` digitando il comando `java HelloJava` ottenendo il seguente risultato a video <br/>
+12. Eseguire il programma `HelloJava` digitando il comando `java HelloJava` ottenendo il seguente risultato a video <br/><br/>
 ```console
 Ciao, sono JAVA ed ho 25 anni!
 ```
 ***
 ![Duke](../../../../../resources/images/duke/duke_cheers.png)
-
 ### Riferimenti:
-
 - [DockerHub][dockerhub]
 - [Immagini Docker JDK e JRE][groppedockerjdk]
 - [Play With Docker][playwithdocker]
