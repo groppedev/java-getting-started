@@ -1,4 +1,4 @@
-# Lesson 1 - Exercise 2
+# Lezione 1 - Esercizio 2
 
 ***
 [![Home][img_home]][href_home]
