@@ -65,11 +65,17 @@ Ciao Luca, sono JAVA ed ho 25 anni!
 Ciao Giovanni, sono JAVA ed ho 25 anni!
 ```
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+### Approfondimento
 
+Comando da analizzare: `java -Duser.language=it HelloPeople Marco Massimo Matteo`
+
+Porzione Comando | Descrizione
+------------ | -------------
+`java` | Comando per eseguire una applicazione Java
+`-Duser.language=it` | Valorizzazione della proprietà di sistema `user.language` con il valore `it` 
+`HelloPeople` | Nome della `Main Class` da eseguire
+`Marco` `Massimo` `Matteo` | Argomenti forniti per il parametro `String[] args` del metodo `HelloPeople#main(String[] args)`
+  
 ***
 [![Home][img_home]][href_home]
 [![Lesson1][img_lesson]][href_lesson]
