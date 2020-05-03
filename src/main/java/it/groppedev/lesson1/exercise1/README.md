@@ -103,18 +103,20 @@ public class HelloJava {
       24: iload_2
       25: invokestatic  #8   // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
       28: aastore
-      29: invokestatic  #9   // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      29: invokestatic  #9   // Method java/lang/String.format:(LString;[LObject;)LString;
       32: invokevirtual #10  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
       35: return
 }
+* line 29 removed java/lang
 ```
-![Approfondimento][magnifying_glass_24] [Elenco delle istruzioni][bytecodedocs] del `bytecode`
+![Approfondimento][magnifying_glass_24] [Elenco delle istruzioni][bytecodedocs] del `bytecode` <br/>
 ![Approfondimento][magnifying_glass_24] [Documentazione][javapdocs] `javap` <br/>
 ![Approfondimento][magnifying_glass_24] [Documentazone][jdktoolsdocs] completa per `JDK Tools and Utilities`
 
-12. Eseguire il programma `HelloJava` digitando il comando `java HelloJava` ottenendo il seguente risultato a video
+12. Eseguire il programma `HelloJava` digitando il comando `java HelloJava` ottenendo il seguente risultato a video <br/>
+
 ```console
-Hello Java!
+Ciao, sono JAVA ed ho 25 anni!
 ```
 ![Duke](../../../../../resources/images/duke/duke_cheers.png)
 
