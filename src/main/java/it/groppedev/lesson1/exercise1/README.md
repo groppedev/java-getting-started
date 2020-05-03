@@ -62,8 +62,8 @@ HelloJava.java: C source, ASCII text
 ```console
 HelloJava.class: compiled Java class data, version 52.0 (Java 1.8)
 ```
-11. Utilizzare il `disassemblatore(disassembler)` che è uno strumento messo a disposizione dalla JDK per analizzare il `bytecode` prodotto e salvato nel file `.class`. Un `disassemblatore(disassembler)` differisce da un `decompilatore(decompiler)` perché opera a più basso livello, per il linguaggio Java un decompilatore è in grado di covertire un file `.class` in un file `.java`
-Eseguire quindi il comando `javap -c HelloJava.class` per poter visualizzare il seguente output
+11. Utilizzare il `disassemblatore(disassembler)` che è uno strumento messo a disposizione dalla JDK per analizzare il `bytecode` prodotto e salvato nel file `.class`. Un `disassemblatore(disassembler)` differisce da un `decompilatore(decompiler)` perché opera a più basso livello. Per il linguaggio Java un `decompilatore` è in grado di covertire un file `.class` in un output leggibile a livello di codice sorgente, mentre un `disassemblatore` converte un file `.class` in un output leggibile a livello di `bytecode`
+Eseguire quindi il comando `javap -c HelloJava.class` per poter visualizzare il seguente output in `bytecode`
 
 ```console
 Compiled from "HelloJava.java"
