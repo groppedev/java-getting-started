@@ -2,7 +2,7 @@
 ![Duke][duke_think_small]
 
 ***
-
+[![Home][img_home]][href_home]
 
 [duke_think_small]: <../../../../resources/images/duke/duke_think_small.png>
 [duke_exercise_small]: <../../../../resources/images/duke/duke_exercise_small.png>
