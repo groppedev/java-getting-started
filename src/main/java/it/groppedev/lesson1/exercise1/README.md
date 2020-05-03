@@ -88,7 +88,7 @@ public class HelloJava {
 ![Approfondimento][magnifying_glass_24] Documentazione `javap`: https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html <br/>
 ![Approfondimento][magnifying_glass_24] In generale per `JDK Tools and Utilities`: https://docs.oracle.com/javase/8/docs/technotes/tools/#troubleshoot
 
-12. Eseguire il programma HelloJava digitando il comando `java HelloJava` ottenendo il seguente risultato a video
+12. Eseguire il programma `HelloJava` digitando il comando `java HelloJava` ottenendo il seguente risultato a video
 ```console
 Hello Java!
 ```
