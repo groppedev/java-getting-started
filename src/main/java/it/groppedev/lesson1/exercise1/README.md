@@ -1,8 +1,8 @@
 # Lezione 1 - Esercizio 1
  
-> Scrivere, compilare ed eseguire un semplice programma Java
+> Scrivere, compilare ed eseguire il primo programma scritto in Java
 > <br/>Pensare ad un semplice programma che stampa nella console il messaggio: “Hello Java”
-> <br/>Eseguire il processo completo di scrittura del codice sorgente, produzione del bytecode ed esecuzione del programma cercando di capirne in modo chiaro il funzionamento
+> <br/>Eseguire il processo completo di scrittura del codice sorgente, produzione del bytecode ed esecuzione del programma cercando di capirne in modo chiaro il funzionamento, passaggio per passaggio
 
 ### Passaggi da eseguire:
 1. Scrivere il codice sorgente del programma con un editor di testo e salvare il file **.java**
@@ -34,7 +34,9 @@ c11c60358e5d: Pull complete
 Digest: sha256:819d40751652460eeac6eb55fa8eeea467289dd7f2b707da3d72e3b4cf9a0457
 Status: Downloaded newer image for groppedocker/centos-openjdk:jdk-8u242
 ```
-4. Opzionalmente utilizzando lo shortcut `ALT + ENTER` è possibile massimizzare la finestra della console
+4. Opzionalmente utilizzando lo shortcut `ALT + ENTER` è possibile massimizzare la finestra della console <br/> <br/>
+![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-5_50.png)
+
 5. Verificare la corretta versione della JDK eseguendo il comando `java -version`
 ```console
 openjdk version "1.8.0_242"
@@ -82,7 +84,7 @@ public class HelloJava {
        8: return
 }
 ```
-Elenco delle istruzioni del `bytecode`: https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5
+![Approfondimento][magnifying_glass_32] Elenco delle istruzioni del `bytecode`: https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5
 
 12. Eseguire il programma HelloJava digitando il comando `java HelloJava` ottenendo il seguente risultato a video
 ```console
@@ -109,6 +111,9 @@ Hello Java!
 [href_home]: <https://groppedev.github.io/java-getting-started/>
 [img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
 [href_lesson]: <../>
+[img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
+[magnifying_glass_48]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/48x48/Magnifier2.png>
+[magnifying_glass_32]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/32x32/Magnifier2.png>
 
 <!-- Definizione dei link -->
 [dockerhub]: <https://hub.docker.com/>
