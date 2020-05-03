@@ -17,7 +17,7 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 # Proposta di soluzione
 
 1. Accedere al sito https://labs.play-with-docker.com/ utilizzando le proprie credenziali GitHub
-![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_70.png)
+![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_50.png)
 2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE`
 3. Avviare l'immagine Docker con OpenJDK eseguendo il comando `docker run -it groppedocker/centos-openjdk:jdk-8u242`
 ```console
