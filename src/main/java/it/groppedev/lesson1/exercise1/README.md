@@ -20,7 +20,7 @@ La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-1_50.png)
 2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE` <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-4_50.png)
-3. Avviare l'immagine Docker con OpenJDK eseguendo il comando `docker run -it groppedocker/centos-openjdk:jdk-8u242`
+3. Avviare l'immagine Docker con OpenJDK eseguendo il comando `docker run -it groppedocker/centos-openjdk:jdk-8u242` <br/>
 ```console
 Unable to find image 'groppedocker/centos-openjdk:jdk-8u242' locally
 jdk-8u242: Pulling from groppedocker/centos-openjdk
@@ -39,14 +39,14 @@ Status: Downloaded newer image for groppedocker/centos-openjdk:jdk-8u242
 4. Opzionalmente utilizzando lo shortcut `ALT + ENTER` è possibile massimizzare la finestra della console <br/> <br/>
 ![PlayWithDocker](../../../../../resources/images/playwithdocker/play-with-docker-login-5_50.png)
 
-5. Verificare la corretta versione della JDK eseguendo il comando `java -version`
+5. Verificare la corretta versione della JDK eseguendo il comando `java -version` <br/>
 ```console
 openjdk version "1.8.0_242"
 OpenJDK Runtime Environment (build 1.8.0_242-b08)
 OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
 ```
-6. Creare un nuovo file chiamato `HelloJava.java` utilizzando il comando `vi HelloJava.java`
-7. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file. Per uscire senza salvare digitare invece il comando `ESC + :q!`
+6. Creare un nuovo file chiamato `HelloJava.java` utilizzando il comando `vi HelloJava.java` <br/>
+7. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file. Per uscire senza salvare digitare invece il comando `ESC + :q!` <br/>
 ```java
 public class HelloJava
 {
@@ -63,18 +63,18 @@ public class HelloJava
 ```
 ![Approfondimento][magnifying_glass_24] [Documentazione][vimdocs] per l'editor di testo `VIM`<br/>
 
-8. Eseguire il comando `file HelloJava.java`, per verificare la tipologia del file appena creato. E' possibile notare che il codice sorgente Java è un semplice file testuale
+8. Eseguire il comando `file HelloJava.java`, per verificare la tipologia del file appena creato. E' possibile notare che il codice sorgente Java è un semplice file testuale <br/>
 ```console
 HelloJava.java: C source, ASCII text
 ```
-9. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloJava.java` per ottenere il file `HelloJava.class` composto da `bytecode`
+9. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloJava.java` per ottenere il file `HelloJava.class` composto da `bytecode` <br/>
 
-10. Eseguire il comando `file HelloJava.class`, per verificare la tipologia del file appena creato. E' possibile notare che il file con estensione `.class` viene riconosciuto come file compilato per la versione `Java 1.8 (52.0)`
+10. Eseguire il comando `file HelloJava.class`, per verificare la tipologia del file appena creato. E' possibile notare che il file con estensione `.class` viene riconosciuto come file compilato per la versione `Java 1.8 (52.0)` <br/>
 ```console
 HelloJava.class: compiled Java class data, version 52.0 (Java 1.8)
 ```
 11. Utilizzare il `disassemblatore(disassembler)` che è uno strumento messo a disposizione dalla JDK per analizzare il `bytecode` prodotto e salvato nel file `.class`. Un `disassemblatore(disassembler)` differisce da un `decompilatore(decompiler)` perché opera a più basso livello. Per il linguaggio Java un `decompilatore` è in grado di covertire un file `.class` in un output leggibile a livello di codice sorgente, mentre un `disassemblatore` converte un file `.class` in un output leggibile a livello di `bytecode`
-Eseguire quindi il comando `javap -c HelloJava.class` per poter visualizzare il seguente output in `bytecode`
+Eseguire quindi il comando `javap -c HelloJava.class` per poter visualizzare il seguente output in `bytecode` <br/>
 
 ```console
 Compiled from "HelloJava.java"
@@ -82,15 +82,30 @@ public class HelloJava {
   public HelloJava();
     Code:
        0: aload_0
-       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       1: invokespecial #1   // Method java/lang/Object."<init>":()V
        4: return
 
   public static void main(java.lang.String[]);
     Code:
-       0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
-       3: ldc           #3                  // String Hello Java!
-       5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
-       8: return
+       0: invokestatic  #2   // Method java/time/Year.now:()Ljava/time/Year;
+       3: invokevirtual #3   // Method java/time/Year.getValue:()I
+       6: istore_1
+       7: iload_1
+       8: sipush        1995
+      11: isub
+      12: istore_2
+      13: getstatic     #5   // Field java/lang/System.out:Ljava/io/PrintStream;
+      16: ldc           #6   // String Ciao, sono JAVA ed ho %d anni!
+      18: iconst_1
+      19: anewarray     #7   // class java/lang/Object
+      22: dup
+      23: iconst_0
+      24: iload_2
+      25: invokestatic  #8   // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      28: aastore
+      29: invokestatic  #9   // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      32: invokevirtual #10  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      35: return
 }
 ```
 ![Approfondimento][magnifying_glass_24] [Elenco delle istruzioni][bytecodedocs] del `bytecode`
