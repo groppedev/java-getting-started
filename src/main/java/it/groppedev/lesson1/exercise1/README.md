@@ -1,5 +1,5 @@
 # Lezione 1 - Esercizio 1
-
+ 
 > Scrivere, compilare ed eseguire un semplice programma Java
 > <br/>Pensare ad un semplice programma che stampa nella console il messaggio: “Hello Java”
 > <br/>Eseguire il processo completo di scrittura del codice sorgente, produzione del bytecode ed esecuzione del programma
@@ -13,6 +13,43 @@
 ### NOTE: 
 Verrà utilizzato per il test l’ambiente “sandbox” offerto dal play-with-docker (E’ richiesto un account su DockerHub).<br/>
 La JDK e la JRE vengono recuperate da delle immagini Docker già pronte.
+
+# Proposta di soluzione
+
+1. Accedere al sito https://labs.play-with-docker.com/ utilizzando le proprie credenziali GitHub
+![PlayWithDocker](../../../../../resources/images/play-with-docker-login-1.png)
+2. Creare una nuova istanza utilizzando il bottone `+ ADD NEW INSTANCE`
+3. Avviare l'immagine Docker con OpenJDK eseguendo il comando `docker run -it groppedocker/centos-openjdk:jdk-8u242`
+```console
+Unable to find image 'groppedocker/centos-openjdk:jdk-8u242' locally
+jdk-8u242: Pulling from groppedocker/centos-openjdk
+f34b00c7da20: Pull complete 
+5c74aaaaf526: Pull complete 
+576b8541527c: Pull complete 
+927da07760d2: Pull complete 
+ec6e92cb5057: Pull complete 
+c11c60358e5d: Pull complete 
+455102eaaf9f: Pull complete 
+Digest: sha256:819d40751652460eeac6eb55fa8eeea467289dd7f2b707da3d72e3b4cf9a0457
+Status: Downloaded newer image for groppedocker/centos-openjdk:jdk-8u242
+```
+4. Opzionalmente utilizzando lo shortcut `ALT + ENTER` è possibile massimizzare la finestra della console
+5. Verificare la corretta versione della JDK eseguendo il comando `java -version`
+```console
+openjdk version "1.8.0_242"
+OpenJDK Runtime Environment (build 1.8.0_242-b08)
+OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
+```
+6. Creare 
+```java
+public class HelloJava
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Hello Java!");
+  }
+}
+```
 
 ### Riferimenti:
 
