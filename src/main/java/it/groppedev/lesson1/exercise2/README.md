@@ -9,9 +9,9 @@
 
 # Proposta di soluzione
 
-1. Eseguire gli stessi passaggi dell'esercizio 1, dal punto 1 al punto 5
-2. Creare un nuovo file chiamato `HelloPeople.java` utilizzando il comando `vi HelloPeople.java`
-3. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file. Per uscire senza salvare digitare invece il comando `ESC + :q!`
+1. Eseguire gli stessi passaggi dell'esercizio 1, dal punto 1 al punto 5 </br>
+2. Creare un nuovo file chiamato `HelloPeople.java` utilizzando il comando `vi HelloPeople.java` </br>
+3. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file. Per uscire senza salvare digitare invece il comando `ESC + :q!` </br>
 ```java
 public class HelloPeople
 {
@@ -44,19 +44,19 @@ public class HelloPeople
 }
 ```
 4. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloPeople.java` per ottenere il file `HelloPeople.class` composto da `bytecode` <br/>
-5. Eseguire il programma `HelloPeople` digitando il comando `java -Duser.language=it HelloPeople Marco Massimo Matteo` ottenendo il seguente risultato a video
+5. Eseguire il programma `HelloPeople` digitando il comando `java -Duser.language=it HelloPeople Marco Massimo Matteo` ottenendo il seguente risultato a video </br>
 ```console
 Ciao Marco, sono JAVA ed ho 25 anni!
 Ciao Massimo, sono JAVA ed ho 25 anni!
 Ciao Matteo, sono JAVA ed ho 25 anni!
 ```
-6. Eseguire nuovamente il programma `HelloPeople`, ma impostando una lingua differente da IT (ES: EN). Digitare il comando `java -Duser.language=en HelloPeople Marco Massimo Matteo` per ottenere il seguente risultato a video
+6. Eseguire nuovamente il programma `HelloPeople`, ma impostando una lingua differente da IT (ES: EN). Digitare il comando `java -Duser.language=en HelloPeople Marco Massimo Matteo` per ottenere il seguente risultato a video </br>
 ```console
 Hello Marco, I am JAVA and I am 25 years old!
 Hello Massimo, I am JAVA and I am 25 years old!
 Hello Matteo, I am JAVA and I am 25 years old!
 ```
-6. Eseguire un'ultima volta il programma `HelloPeople`, impostando ulteriori persone da salutare. Digitare il comando `java -Duser.language=it HelloPeople Marco Massimo Matteo Luca Giovanni` per ottenere il seguente risultato a video
+6. Eseguire un'ultima volta il programma `HelloPeople`, aggiungendo però ulteriori persone da salutare (Luca Giovanni). Digitare il comando `java -Duser.language=it HelloPeople Marco Massimo Matteo Luca Giovanni` per ottenere il seguente risultato a video </br>
 ```console
 Ciao Marco, sono JAVA ed ho 25 anni!
 Ciao Massimo, sono JAVA ed ho 25 anni!
