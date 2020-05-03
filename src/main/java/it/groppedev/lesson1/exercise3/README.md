@@ -1,4 +1,4 @@
-# Lesson 1 - Exercise 3
+# Lezione 1 - Esercizio 3
 
 ![classdiagram](greetings-classdiagram.png)
 
