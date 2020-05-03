@@ -82,7 +82,12 @@ public class HelloJava {
        8: return
 }
 ```
+Elenco delle istruzioni del `bytecode`: https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5
 
+12. Eseguire il programma HelloJava digitando il comando `java HelloJava` ottenendo il seguente risultato a video
+```console
+Hello Java!
+```
 
 ### Riferimenti:
 
