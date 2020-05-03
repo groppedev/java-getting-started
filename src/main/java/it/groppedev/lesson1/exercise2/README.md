@@ -64,6 +64,12 @@ Ciao Matteo, sono JAVA ed ho 25 anni!
 Ciao Luca, sono JAVA ed ho 25 anni!
 Ciao Giovanni, sono JAVA ed ho 25 anni!
 ```
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 ***
 [![Home][img_home]][href_home]
 [![Lesson1][img_lesson]][href_lesson]
