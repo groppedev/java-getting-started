@@ -84,9 +84,9 @@ public class HelloJava {
        8: return
 }
 ```
-![Approfondimento][magnifying_glass_32] Elenco delle istruzioni del `bytecode`: https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5 <br/>
-![Approfondimento][magnifying_glass_32] Documentazione `javap`: https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html <br/>
-![Approfondimento][magnifying_glass_32] In generale per `JDK Tools and Utilities`: https://docs.oracle.com/javase/8/docs/technotes/tools/#troubleshoot
+![Approfondimento][magnifying_glass_24] Elenco delle istruzioni del `bytecode`: https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5 <br/>
+![Approfondimento][magnifying_glass_24] Documentazione `javap`: https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javap.html <br/>
+![Approfondimento][magnifying_glass_24] In generale per `JDK Tools and Utilities`: https://docs.oracle.com/javase/8/docs/technotes/tools/#troubleshoot
 
 12. Eseguire il programma HelloJava digitando il comando `java HelloJava` ottenendo il seguente risultato a video
 ```console
