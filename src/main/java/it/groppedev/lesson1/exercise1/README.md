@@ -135,15 +135,11 @@ Ciao, sono JAVA ed ho 25 anni!
 [![Lesson1][img_lesson]][href_lesson]
 
 <!-- Definizione dei link per la navigazione -->
-[img_home]: <http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png>
+[img_home]: <../../../../../resources/images/navigation/home.png>
 [href_home]: <https://groppedev.github.io/java-getting-started/>
-[img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
+[img_lesson]: <../../../../../resources/images/navigation/books.png>
 [href_lesson]: <../>
-[img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
-[magnifying_glass_48]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/48x48/Magnifier2.png>
-[magnifying_glass_32]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/32x32/Magnifier2.png>
-[magnifying_glass_24]: <http://files.softicons.com/download/toolbar-icons/vista-base-software-icons-2-by-icons-land/png/24x24/Magnifier2.png>
-[duke_cheers]: <http://cr.openjdk.java.net/~jeff/Duke/png/DukeCheers.png>
+[magnifying_glass_24]: <../../../../../magnifier.png>
 
 <!-- Definizione dei link -->
 [dockerhub]: <https://hub.docker.com/>
