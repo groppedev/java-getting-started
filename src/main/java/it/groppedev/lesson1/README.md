@@ -1,47 +1,8 @@
-
-
-## Lezione 1
-
-## Esercizi
-
-### Esercizio 1
-[Dettaglio](exercise1/README.md)
-### Esercizio 2
-[Dettaglio](exercise2/README.md)
-### Esercizio 3
-[Dettaglio](exercise3/README.md)
-
-```java
-public class HelloJava
-{
-  public static void main(String[] args)
-  {
-    System.out.println("Hello Java!");
-  }
-}
-```
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-
-
-
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and 
-```
-This is an [example link](http://example.com/ "With a Title").
-
+# Lezione 1
+## Elenco Esercizi
+- [Esercizio 1](exercise1/README.md)
+- [Esercizio 2](exercise2/README.md)
+- [Esercizio 3](exercise3/README.md)
 ***
 [![Home][img_home]][href_home]
 <!-- Definizione dei link per la navigazione -->
