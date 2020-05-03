@@ -96,9 +96,7 @@ public class HelloJava {
 ```console
 Hello Java!
 ```
-
-![Approfondimento][duke_cheers]
-
+![Duke](../../../../../resources/images/duke/duke_cheers.png)
 
 ### Riferimenti:
 
