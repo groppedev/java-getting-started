@@ -2,3 +2,6 @@
 
 ***
 [![Home][img_home]][href_home]
+
+<!-- Definizione dei link -->
+[img_home]: <http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png>
