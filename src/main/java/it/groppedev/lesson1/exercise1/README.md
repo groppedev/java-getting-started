@@ -108,6 +108,7 @@ public static void main(java.lang.String[]);
       29: invokestatic  #9   // Method java/lang/String.format:(LString;[LObject;)LString;
       32: invokevirtual #10  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
       35: return
+* line 29 removed java/lang
 ```
 ![Approfondimento][magnifying_glass_24] [Elenco delle istruzioni][bytecodedocs] del `bytecode` <br/>
 ![Approfondimento][magnifying_glass_24] [Documentazione][javapdocs] `javap` <br/>
