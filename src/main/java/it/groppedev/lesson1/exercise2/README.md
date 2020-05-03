@@ -11,7 +11,7 @@
 
 1. Eseguire gli stessi passaggi dell'esercizio 1, dal punto 1 al punto 5
 2. Creare un nuovo file chiamato `HelloPeople.java` utilizzando il comando `vi HelloPeople.java`
-3. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file. Per uscire senza salvare digitare invece il comando `ESC + :q!` <br/><br/>
+3. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file. Per uscire senza salvare digitare invece il comando `ESC + :q!`
 ```java
 public class HelloPeople
 {
@@ -27,10 +27,8 @@ public class HelloPeople
 	{
 		int currentYear = java.time.Year.now().getValue();
 		int javaAge = currentYear - JAVA_YEAR_OF_BIRTH;
-		// -Duser.language=it
 		String language = System.getProperty(USER_LANGUAGE_PROPERTY);
 
-		// Massimo Marco Matteo
 		for(String person : args)
 		{
 			if(language.equals(ITALIAN_ALIAS))
