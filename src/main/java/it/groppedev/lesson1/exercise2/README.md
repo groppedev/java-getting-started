@@ -43,6 +43,8 @@ public class HelloPeople
 	}
 }
 ```
+4. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloPeople.java` per ottenere il file `HelloPeople.class` composto da `bytecode` <br/>
+5. 
 
 ***
 [![Home][img_home]][href_home]
