@@ -5,7 +5,7 @@
 ### Passaggi da eseguire:
 1. Scrivere il codice sorgente del programma con un editor di testo e salvare il file **.java**
 2. Utilizzare una JDK per compilare il programma Java tramite il comando `javac` per ottenere il file **.class**
-3. Utilizzare una JRE per eseguire il programma Java compilato (il file **.class**) tramite il comando `java` per ottenere l'output del programma in console. Devono essere forniti dei parametri di input e una proprietà di sistema che indica il linguaggio da utilizzare.
+3. Utilizzare una JRE per eseguire il programma Java compilato (il file **.class**) tramite il comando `java` per ottenere l'output del programma in console. Devono essere forniti dei parametri di input ed una proprietà di sistema che indichi il linguaggio da utilizzare.
 
 ***
 [![Home][img_home]][href_home]
