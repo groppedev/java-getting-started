@@ -74,7 +74,7 @@ Porzione Comando | Descrizione
 `java` | Comando per eseguire una applicazione Java
 `-Duser.language=it` | Valorizzazione della proprietà di sistema `user.language` con il valore `it` 
 `HelloPeople` | Nome della `Main Class` da eseguire
-`Marco` `Massimo` `Matteo` | Argomenti forniti per il parametro `String[] args` del metodo `HelloPeople#main(String[] args)`
+`Marco` `Massimo` `Matteo` | Elenco argomenti forniti per il parametro `String[] args` del metodo `HelloPeople#main(String[] args)`
   
 ***
 [![Home][img_home]][href_home]
