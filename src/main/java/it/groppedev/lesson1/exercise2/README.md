@@ -81,7 +81,8 @@ Porzione Comando | Descrizione
 [![Lesson1][img_lesson]][href_lesson]
 
 <!-- Definizione dei link per la navigazione -->
-[img_home]: <http://files.softicons.com/download/toolbar-icons/soft-icons-by-lokas-software/png/48x48/0007-home.png>
+[img_home]: <../../../../../resources/images/navigation/home.png>
 [href_home]: <https://groppedev.github.io/java-getting-started/>
-[img_lesson]: <http://files.softicons.com/download/toolbar-icons/ravenna-3d-icons-by-double-j-design/png/48x48/Books.png>
+[img_lesson]: <../../../../../resources/images/navigation/books.png>
 [href_lesson]: <../>
+[magnifying_glass_24]: <../../../../../resources/images/navigation/magnifier.png>
