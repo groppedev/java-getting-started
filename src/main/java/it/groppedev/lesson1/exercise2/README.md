@@ -9,7 +9,7 @@
 
 # Proposta di soluzione
 
-1. Eseguire gli stessi passaggi dell'esercizio 1, dal punto 1 al punto 5 <br/><br/>
+1. Eseguire gli stessi passaggi dell'[Esercizio 1](../exercise1), dal punto 1 al punto 5 <br/><br/>
 2. Creare un nuovo file chiamato `HelloPeople.java` utilizzando il comando `vi HelloPeople.java` <br/><br/>
 3. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file. Per uscire senza salvare digitare invece il comando `ESC + :q!` <br/>
 ```java
