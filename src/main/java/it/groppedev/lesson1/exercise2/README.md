@@ -9,8 +9,8 @@
 
 # Proposta di soluzione
 
-1. Eseguire gli stessi passaggi dell'esercizio 1, dal punto 1 al punto 5 <br/>
-2. Creare un nuovo file chiamato `HelloPeople.java` utilizzando il comando `vi HelloPeople.java` <br/>
+1. Eseguire gli stessi passaggi dell'esercizio 1, dal punto 1 al punto 5 <br/><br/>
+2. Creare un nuovo file chiamato `HelloPeople.java` utilizzando il comando `vi HelloPeople.java` <br/><br/>
 3. Scrivere nel file il seguente codice sorgente Java, entrando in modalità `INSERT` premendo il tasto `i`, una volta terminata la scrittura del codice sorgente, digitare il comando `ESC + :x` per salvare il file. Per uscire senza salvare digitare invece il comando `ESC + :q!` <br/>
 ```java
 public class HelloPeople
@@ -43,7 +43,7 @@ public class HelloPeople
 	}
 }
 ```
-4. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloPeople.java` per ottenere il file `HelloPeople.class` composto da `bytecode` <br/>
+4. Compilare il codice sorgente Java utilizzando gli strumenti messi a disposizione dalla JDK, eseguire quindi il comando `javac HelloPeople.java` per ottenere il file `HelloPeople.class` composto da `bytecode` <br/><br/>
 5. Eseguire il programma `HelloPeople` digitando il comando `java -Duser.language=it HelloPeople Marco Massimo Matteo` ottenendo il seguente risultato a video <br/>
 ```console
 Ciao Marco, sono JAVA ed ho 25 anni!
