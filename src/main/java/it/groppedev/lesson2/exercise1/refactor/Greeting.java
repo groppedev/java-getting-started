@@ -88,5 +88,4 @@ public class Greeting
 	{
 		return "Greeting [javaAge=" + javaAge + ", language=" + language + ", person=" + person + "]";
 	}
-
 }
