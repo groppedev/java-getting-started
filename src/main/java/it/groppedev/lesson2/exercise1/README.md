@@ -5,7 +5,7 @@
 ### Passaggi da eseguire:
 1. Rinominare la classe `HelloPeople` in `HelloPeopleDebug`
 2. Creare una classe `Constants` e spostare tutte le constanti in questa nuova classe
-3. Creare un apposito metodo `HelloPeopleDebug#selectLanguage` con il compito di selezionare la lingua da utilizzare (Attualmente viene letta la proprietà di sistema `System.getProperty`)
+3. Creare un apposito metodo `HelloPeopleDebug#selectLanguage` con il compito di selezionare la lingua da utilizzare (Attualmente viene letta la proprietà di sistema `System.getProperty("user.language")`)
 4. Creare un apposito metodo `HelloPeopleDebug#printGreetingByLanguage` che esegue il compito di stampare nella console il saluto per ogni persona in input
 5. Creare un apposito metodo `HelloPeopleDebug#calculateJavaAge` che calcola gli anni di Java
 6. Rimuovere la duplicazione nel metodo `HelloPeopleDebug#printGreetingByLanguage` creando un apposito metodo che esegue solo la stampa in console accettando come parametro il saluto a seconda del linguaggio
@@ -194,3 +194,14 @@ public class Greeting
 	}
 }
 ```
+***
+
+[![Home][img_home]][href_home]
+[![Lesson2][img_lesson]][href_lesson]
+
+<!-- Definizione dei link per la navigazione -->
+[img_home]: <../../../../../resources/images/navigation/home.png>
+[href_home]: <https://groppedev.github.io/java-getting-started/>
+[img_lesson]: <../../../../../resources/images/navigation/books.png>
+[href_lesson]: <../>
+[magnifying_glass_24]: <../../../../../resources/images/navigation/magnifier.png>
