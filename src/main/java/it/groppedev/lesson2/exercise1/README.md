@@ -197,7 +197,7 @@ public class Greeting
 ***
 
 [![Home][img_home]][href_home]
-[![Lesson1][img_lesson]][href_lesson]
+[![Lesson2][img_lesson]][href_lesson]
 
 <!-- Definizione dei link per la navigazione -->
 [img_home]: <../../../../../resources/images/navigation/home.png>
