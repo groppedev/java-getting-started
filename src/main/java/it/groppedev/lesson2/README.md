@@ -1,4 +1,4 @@
-# Lezione 3
+# Lezione 2
 
 ![Duke][duke_think_small]
 <!--## Elenco Esercizi -->
