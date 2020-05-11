@@ -34,19 +34,27 @@ Comando | Descrizione
 
 # Proposta di soluzione
 
-1. Sezione `Variables` ed il `return value` <br/>
+## Sezione `Variables` ed il `return value` <br/>
 ![DebugStep1-1](../../../../../resources/images/debug/debug.1.1_x70.png) <br/>
 ![DebugStep1-2](../../../../../resources/images/debug/debug.1.2_x70.png) <br/>
-2. Sezione `Call Stack` <br/>
 
-Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printer))`	
-
+## Sezione `Call Stack` <br/>
+Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printer))`
 Frame | Line
 ------------ | -------------
 `Printer.printSynch(String, String)` | _line: 14_
 `Greeting.printInternal(String)` | _line: 46_
 `Greeting.print()` | _line: 35_
 `HelloPeopleDebug.main(String[])` | _line: 18_
+
+```java Printer.printSynch(String, String) ``` 
+![DebugStep2-1](../../../../../resources/images/debug/debug.2.1_x70.png) <br/>
+```java Greeting.printInternal(String) ```
+![DebugStep2-2](../../../../../resources/images/debug/debug.2.2_x70.png) <br/>
+```java Greeting.print() ```
+![DebugStep2-3](../../../../../resources/images/debug/debug.2.3_x70.png) <br/>
+```java HelloPeopleDebug.main(String[]) ```
+![DebugStep2-4](../../../../../resources/images/debug/debug.2.4_x70.png) <br/>
 
 ```java
 public class HelloPeople
