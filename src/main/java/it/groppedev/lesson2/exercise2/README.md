@@ -65,6 +65,7 @@ Il metodo `Greeting#toString()` permette la seguente visualizzazione nella sezio
 
 ## Sezione `Call Stack` Multithreading <br/>
 
+![DebugStep4-1](../../../../../resources/images/debug/debug.4.1_x70.png) <br/><br/>
 
 ```java
 public class HelloPeople
