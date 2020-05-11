@@ -7,7 +7,7 @@
 1. Aggiungere un _breakpoint_ alla linea 24 nel metodo `HelloPeopleDebug#calculateJavaAge`. In questo passaggio analizzare la sezione `Variables` ed il `return value`.
 2.  Aggiungere un _breakpoint_ alla linea 13 nel metodo `Printer#printSynch`. In questo passaggio analizzare la sezione `Call Stack`.
 3.  Aggiungere un _breakpoint_ alla linea 18 nel metodo `HelloPeopleDebug#main`. Successivamente aggiungere una `Expression` utilizzando il comando `watch` (Selezione variabile _greeting_ alla linea 17 tasto desto e poi watch). In questo passaggio analizzare la sezione `Expressions`.
-
+4. Nel metodo `Greeting#printInternal` sostituire il il richiamo al metodo `Printer#printSynch` il metodo `Printer#printAsync`. Successivamente aggiungere un _breakpoint_ alla linea 32 del metodo `Printer#printAsync` ed avviare il _Debug_. In questo passaggio prestare attenzione alla sezione _Call Stack_ ed alla presenza di molteplici _Thread_
 
 # Tutorial minimale sul Debug
 
