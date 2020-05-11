@@ -12,8 +12,8 @@
 
 ### Guide complete sul Debug con Eclipse IDE
 
+- [Debug con Eclipse - Vogella][tutorialdebugvogella] 
 - [Debug con Eclipse - Jaxenter][tutorialdebugjaxenter]
-- [Debug con Eclipse - Vogella][tutorialdebugvogella]
 
 ### Aggiungere un Breakpoint
 Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di interesse ed utilizzare lo  _shortcut_ `CTRL+SHIFT+B`. In alternativa, tasto destro sul numero di linea e click sull'opzione `Toggle Breakpoint` <br/><br/>
