@@ -40,7 +40,6 @@ Comando | Descrizione
 ![DebugStep1-2](../../../../../resources/images/debug/debug.1.2_x70.png) <br/>
 
 ## Sezione `Call Stack` <br/>
-Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printer))`
 
 Frame | Line
 ------------ | -------------
@@ -48,6 +47,8 @@ Frame | Line
 `Greeting.printInternal(String)` | _line: 46_
 `Greeting.print()` | _line: 35_
 `HelloPeopleDebug.main(String[])` | _line: 18_
+
+Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printer))`
 
 ```java Printer.printSynch(String, String) ``` 
 ![DebugStep2-1](../../../../../resources/images/debug/debug.2.1_x70.png) <br/>
