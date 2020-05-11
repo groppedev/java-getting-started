@@ -15,7 +15,7 @@ Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di inte
 ![Breakpoint](../../../../../resources/images/debug/debug.breakpoint_x70.png) <br/>
 
 ### Esecuzione in modalità Debug
-Per avviare un programma in modalità _Debug_ da Eclipse, tasto destro sul codice sorgente e `Debug As -> Java Application` <br/><br/>
+Per avviare un programma in modalità _Debug_ da Eclipse, tasto destro sul codice sorgente poi `Debug As -> Java Application` <br/><br/>
 ![StartDebug](../../../../../resources/images/debug/debug.startdebug_x70.png) <br/>
 
 2. Sezione `Variables` ed il `return value
