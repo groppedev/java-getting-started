@@ -35,11 +35,11 @@ Comando | Descrizione
 
 # Proposta di soluzione
 
-## Sezione `Variables` ed il `return value` <br/>
+## Sezione Variables ed il return value <br/>
 ![DebugStep1-1](../../../../../resources/images/debug/debug.1.1_x70.png) <br/>
 ![DebugStep1-2](../../../../../resources/images/debug/debug.1.2_x70.png) <br/>
 
-## Sezione `Call Stack` <br/>
+## Sezione Call Stack <br/>
 
 Frame | Line
 ------------ | -------------
@@ -59,13 +59,13 @@ Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printe
 ```java HelloPeopleDebug.main(String[]) ```
 ![DebugStep2-4](../../../../../resources/images/debug/debug.2.4_x70.png) <br/>
 
-## Sezione `Expressions` <br/>
+## Sezione Expressions <br/>
 
 ![DebugStep3-1](../../../../../resources/images/debug/debug.3.1_x70.png) <br/><br/>
 Il metodo `Greeting#toString()` permette la seguente visualizzazione nella sezione `Expressions`
 ![DebugStep3-2](../../../../../resources/images/debug/debug.3.2_x70.png) <br/>
 
-## Sezione `Call Stack` Multithreading <br/>
+## Sezione Call Stack Multithreading <br/>
 
 ![DebugStep4-1](../../../../../resources/images/debug/debug.4.1_x70.png) <br/><br/>
 
