@@ -10,7 +10,11 @@
 
 # Proposta di soluzione
 
-1. Codice originale di partenza
+1. Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di interesse ed utilizzare lo  _shortcut_ `CTRL+SHIFT+B`. In alternativa, tasto destro sul numero di linea e click sull'opzione `Toggle Breakpoint`
+
+
+
+2. Sezione `Variables` ed il `return value
 
 ```java
 public class HelloPeople
