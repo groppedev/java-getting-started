@@ -23,6 +23,15 @@ Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di inte
 Per avviare un programma in modalità _Debug_ da Eclipse, tasto destro sul codice sorgente poi `Debug As -> Java Application` <br/><br/>
 ![StartDebug](../../../../../resources/images/debug/debug.startdebug_x70.png) <br/>
 
+### Comandi per il Debug
+
+Comando | Descrizione
+------------ | -------------
+`F5` | `Step Into` Esegue l'istruzione successiva e in caso di un metodo entra in quest'ultimo
+`F6` | `Step Over` Esegue l'istruzione successiva ma in caso di metodo non entra in quest'ultimo 
+`F7` | `Step Return` Restituisce il controllo al metodo chiamante del metodo corrente
+`F8` | `Resume` Forza la prosecuzione dell'esecuzione fino al successivo _Breakpoint_ o _Watchpoint_
+
 2. Sezione `Variables` ed il `return value
 
 ```java
