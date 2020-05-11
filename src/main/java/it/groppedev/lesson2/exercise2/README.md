@@ -63,6 +63,9 @@ Frame | Line
 Il metodo `Greeting#toString()` permette la seguente visualizzazione nella sezione `Expressions`
 ![DebugStep3-2](../../../../../resources/images/debug/debug.3.2_x70.png) <br/>
 
+## Sezione `Call Stack` Multithreading <br/>
+
+
 ```java
 public class HelloPeople
 {
