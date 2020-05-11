@@ -34,11 +34,19 @@ Comando | Descrizione
 
 # Proposta di soluzione
 
-1. Sezione `Variables` ed il `return value`  <br/> <br/>
-
+1. Sezione `Variables` ed il `return value` <br/>
 ![DebugStep1-1](../../../../../resources/images/debug/debug.1.1_x70.png) <br/>
 ![DebugStep1-2](../../../../../resources/images/debug/debug.1.2_x70.png) <br/>
+2. Sezione `Call Stack` <br/>
 
+Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printer))`	
+
+Frame | Line
+------------ | -------------
+`Printer.printSynch(String, String)` | _line: 14_
+`Greeting.printInternal(String)` | _line: 46_
+`Greeting.print()` | _line: 35_
+`HelloPeopleDebug.main(String[])` | _line: 18_
 
 ```java
 public class HelloPeople
