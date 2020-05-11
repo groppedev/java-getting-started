@@ -32,7 +32,8 @@ public class Printer
 			@Override
 			public void run()
 			{
-				System.out.println(String.format("Thread '%s' nome '%s'", Thread.currentThread().getName(), person));
+				System.out.println(String.format("Thread '%s' nome '%s'", 
+								 Thread.currentThread().getName(), person));
 				System.out.println(messageToPrint);
 			}
 		}, threadName);
@@ -49,7 +50,8 @@ public class Printer
 	{
 		String threadName = "thread-print-" + person.toLowerCase();
 		Thread printThread = new Thread(() -> {
-					System.out.println(String.format("Thread '%s' nome '%s'", Thread.currentThread().getName(), person));
+					System.out.println(String.format("Thread '%s' nome '%s'", 
+								  Thread.currentThread().getName(), person));
 					System.out.println(messageToPrint);
 		}, threadName);
 		printThread.start();
