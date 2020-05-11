@@ -42,7 +42,7 @@ public class Printer
 	}
 	
 	/**
-	 * Stampa il messaggio in input in modo asincrono creando un nuovo Thread ma sfruttando la sintassi delle Lambda Expressions.
+	 * Stampa il messaggio in input in modo asincrono creando un nuovo Thread ma usando la sintassi delle Lambda Expressions.
 	 * 
 	 * @param messageToPrint Messaggio da stampare
 	 * @param person Persona per la quale si vuole stampare il messaggio
