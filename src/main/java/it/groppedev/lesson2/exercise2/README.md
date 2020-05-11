@@ -14,7 +14,8 @@ public class Printer
 	 */
 	public static void printSynch(String messageToPrint, String person)
 	{
-		System.out.println(String.format("Thread '%s' nome '%s'", Thread.currentThread().getName(), person));
+		System.out.println(String.format("Thread '%s' nome '%s'", 
+					         Thread.currentThread().getName(), person));
 		System.out.println(messageToPrint);
 	}
 	
@@ -51,7 +52,7 @@ public class Printer
 		String threadName = "thread-print-" + person.toLowerCase();
 		Thread printThread = new Thread(() -> {
 					System.out.println(String.format("Thread '%s' nome '%s'", 
-								  Thread.currentThread().getName(), person));
+								  	 Thread.currentThread().getName(), person));
 					System.out.println(messageToPrint);
 		}, threadName);
 		printThread.start();
