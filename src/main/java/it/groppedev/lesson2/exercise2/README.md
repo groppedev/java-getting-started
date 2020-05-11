@@ -10,8 +10,8 @@
 
 # Proposta di soluzione
 
-1. Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di interesse ed utilizzare lo  _shortcut_ `CTRL+SHIFT+B`. In alternativa, tasto destro sul numero di linea e click sull'opzione `Toggle Breakpoint`
-
+1. Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di interesse ed utilizzare lo  _shortcut_ `CTRL+SHIFT+B`. In alternativa, tasto destro sul numero di linea e click sull'opzione `Toggle Breakpoint` <br/>
+![Breakpoint](../../../../../resources/images/debug/debug.breakpoint2.png) <br/>
 
 
 2. Sezione `Variables` ed il `return value
