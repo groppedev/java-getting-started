@@ -8,12 +8,7 @@
 2.  Aggiungere un _breakpoint_ alla linea 13 nel metodo `Printer#printSynch`. In questo passaggio analizzare la sezione `Call Stack`.
 
 
-# Proposta di soluzione
-
-### Guide complete sul Debug con Eclipse IDE
-
-- [Debug con Eclipse - Vogella][tutorialdebugvogella] 
-- [Debug con Eclipse - Jaxenter][tutorialdebugjaxenter]
+# Tutorial minimale sul Debug
 
 ### Aggiungere un Breakpoint
 Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di interesse ed utilizzare lo  _shortcut_ `CTRL+SHIFT+B`. In alternativa, tasto destro sul numero di linea e click sull'opzione `Toggle Breakpoint` <br/><br/>
@@ -32,7 +27,18 @@ Comando | Descrizione
 `F7` | `Step Return` Restituisce il controllo al metodo chiamante del metodo corrente
 `F8` | `Resume` Forza la prosecuzione dell'esecuzione fino al successivo _Breakpoint_ o _Watchpoint_
 
-2. Sezione `Variables` ed il `return value
+### Guide complete sul Debug con Eclipse IDE
+
+- [Debug con Eclipse - Vogella][tutorialdebugvogella] 
+- [Debug con Eclipse - Jaxenter][tutorialdebugjaxenter]
+
+# Proposta di soluzione
+
+1. Sezione `Variables` ed il `return value`  <br/> <br/>
+
+![DebugStep1-1](../../../../../resources/images/debug/debug.1.1_x70.png) <br/>
+![DebugStep1-2](../../../../../resources/images/debug/debug.1.2_x70.png) <br/>
+
 
 ```java
 public class HelloPeople
