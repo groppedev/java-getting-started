@@ -39,7 +39,7 @@ Comando | Descrizione
 ![DebugStep1-2](../../../../../resources/images/debug/debug.1.2_x70.png) <br/>
 2. Sezione `Call Stack` <br/>
 
-Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printer))`	
+Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printer))`
 
 Frame | Line
 ------------ | -------------
@@ -47,6 +47,11 @@ Frame | Line
 `Greeting.printInternal(String)` | _line: 46_
 `Greeting.print()` | _line: 35_
 `HelloPeopleDebug.main(String[])` | _line: 18_
+
+![DebugStep2-1](../../../../../resources/images/debug/debug.2.1_x70.png) <br/>
+![DebugStep2-2](../../../../../resources/images/debug/debug.2.2_x70.png) <br/>
+![DebugStep2-3](../../../../../resources/images/debug/debug.2.3_x70.png) <br/>
+![DebugStep2-4](../../../../../resources/images/debug/debug.2.4_x70.png) <br/>
 
 ```java
 public class HelloPeople
