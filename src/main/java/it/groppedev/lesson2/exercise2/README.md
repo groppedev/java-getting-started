@@ -1,27 +1,20 @@
-# Lezione 2 - Esercizio 1
+# Lezione 2 - Esercizio 2
 
-> Partendo dall'[esercizio 2 della lezione 1](../../lesson1/exercise2/), utilizzare Eclipse per svolgere alcune operazioni di refactor del codice e successivamente prendere confidenza con gli strumenti di DEBUG.
-
-
-********** Introduzione della classe Printer
+> Utilizzare Eclipse per esercitarsi con la funzione di DEBUG allo scopo di analizzare l'anatomia di un programma Java.
+> Per rendere più completo l'esercizio è stata introdotta una classe di utilità Printer per differenziare la stampa del saluto nella console
 
 ### Passaggi da eseguire:
-1. Rinominare la classe `HelloPeople` in `HelloPeopleDebug`
-2. Creare una classe `Constants` e spostare tutte le constanti in questa nuova classe
-3. Creare un apposito metodo `HelloPeopleDebug#selectLanguage` con il compito di selezionare la lingua da utilizzare (Attualmente viene letta la proprietà di sistema `System.getProperty`)
-4. Creare un apposito metodo `HelloPeopleDebug#printGreetingByLanguage` che esegue il compito di stampare nella console il saluto per ogni persona in input
-5. Creare un apposito metodo `HelloPeopleDebug#calculateJavaAge` che calcola gli anni di Java
-6. Rimuovere la duplicazione nel metodo `HelloPeopleDebug#printGreetingByLanguage` creando un apposito metodo che esegue solo la stampa in console accettando come parametro il saluto a seconda del linguaggio
-7. Introdurre un apposito oggetto `Greeting` da passare come unico parametro al metodo `HelloPeopleDebug#printGreetingByLanguage`
-8. Incapsulare le variabili di istanza dell'oggetto `Greeting` creando appositi metodi `getter`
-9. Rendere tutte le variabili di istanza dell'oggetto `Greeting` immutabili utilizzando la keyword `final` una volta eseguita questa operazione cancellare tutti i metodi `setter`
-10. Generare automaticamente i metodi `Greeting#equals` e `Greeting#hashCode`
-11. Generare automaticamente il metodo `Greeting#toString`
-12. Creare un apposito metodo `Greeting#print` e spostare in questo metodo tutta la logica di stampa del messaggio
+1. Aggiungere un _breakpoint_ alla linea 24 nel metodo `HelloPeopleDebug#calculateJavaAge`. In questo passaggio analizzare la sezione `Variables` ed il `return value`.
+2.  Aggiungere un _breakpoint_ alla linea 13 nel metodo `Printer#printSynch`. In questo passaggio analizzare la sezione `Call Stack`.
+
 
 # Proposta di soluzione
 
-1. Codice originale di partenza
+1. Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di interesse ed utilizzare lo  _shortcut_ `CTRL+SHIFT+B`. In alternativa, tasto destro sul numero di linea e click sull'opzione `Toggle Breakpoint`
+
+
+
+2. Sezione `Variables` ed il `return value
 
 ```java
 public class HelloPeople

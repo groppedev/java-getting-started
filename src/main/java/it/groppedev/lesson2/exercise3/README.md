@@ -4,13 +4,14 @@
 
 
 ********** Language diventa un Enumerato
-********** Il testo del saluto da un costante diventa una propriet� dell'enumerato.
+********** Il testo del saluto da un costante diventa una proprietà dell'enumerato.
+********** Creare un servizio di stampa con differenti opzioni
 
 
 ### Passaggi da eseguire:
 1. Rinominare la classe `HelloPeople` in `HelloPeopleDebug`
 2. Creare una classe `Constants` e spostare tutte le constanti in questa nuova classe
-3. Creare un apposito metodo `HelloPeopleDebug#selectLanguage` con il compito di selezionare la lingua da utilizzare (Attualmente viene letta la proprietà di sistema `System.getProperty`)
+3. Creare un apposito metodo `HelloPeopleDebug#selectLanguage` con il compito di selezionare la lingua da utilizzare (Attualmente viene letta la proprietÃ  di sistema `System.getProperty`)
 4. Creare un apposito metodo `HelloPeopleDebug#printGreetingByLanguage` che esegue il compito di stampare nella console il saluto per ogni persona in input
 5. Creare un apposito metodo `HelloPeopleDebug#calculateJavaAge` che calcola gli anni di Java
 6. Rimuovere la duplicazione nel metodo `HelloPeopleDebug#printGreetingByLanguage` creando un apposito metodo che esegue solo la stampa in console accettando come parametro il saluto a seconda del linguaggio
