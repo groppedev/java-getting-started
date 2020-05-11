@@ -41,6 +41,7 @@ Comando | Descrizione
 
 ## Sezione `Call Stack` <br/>
 Thread in esecuzione: `Thread [main] (Suspended (breakpoint at line 14 in Printer))`
+
 Frame | Line
 ------------ | -------------
 `Printer.printSynch(String, String)` | _line: 14_
