@@ -10,7 +10,7 @@
 
 # Proposta di soluzione
 
-### Guide complete
+### Guide complete sul Debug con Eclipse IDE
 
 - [Debug con Eclipse - Jaxenter][tutorialdebugjaxenter]
 - [Debug con Eclipse - Vogella][tutorialdebugvogella]
