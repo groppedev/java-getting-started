@@ -12,8 +12,8 @@
 
 ### Guide complete
 
-- [Debug con Eclipse - Jaxenter] (https://jaxenter.com/debugging-eclipse-ide-java-devs-135362.html)
-- [Debug con Eclipse - Vogella] (https://www.vogella.com/tutorials/EclipseDebugging/article.html)
+- [Debug con Eclipse - Jaxenter][tutorialdebugjaxenter]
+- [Debug con Eclipse - Vogella][tutorialdebugvogella]
 
 ### Aggiungere un Breakpoint
 Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di interesse ed utilizzare lo  _shortcut_ `CTRL+SHIFT+B`. In alternativa, tasto destro sul numero di linea e click sull'opzione `Toggle Breakpoint` <br/><br/>
@@ -199,3 +199,7 @@ public class Greeting
 	}
 }
 ```
+
+
+[tutorialdebugjaxenter]: <https://jaxenter.com/debugging-eclipse-ide-java-devs-135362.html>
+[tutorialdebugvogella]: <https://www.vogella.com/tutorials/EclipseDebugging/article.html>
