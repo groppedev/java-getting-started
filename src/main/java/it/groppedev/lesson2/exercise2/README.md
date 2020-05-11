@@ -67,5 +67,18 @@ Il metodo `Greeting#toString()` permette la seguente visualizzazione nella sezio
 
 ![DebugStep4-1](../../../../../resources/images/debug/debug.4.1_x70.png) <br/><br/>
 
+***
+
+[![Home][img_home]][href_home]
+[![Lesson2][img_lesson]][href_lesson]
+
+<!-- Definizione dei link per la navigazione -->
+[img_home]: <../../../../../resources/images/navigation/home.png>
+[href_home]: <https://groppedev.github.io/java-getting-started/>
+[img_lesson]: <../../../../../resources/images/navigation/books.png>
+[href_lesson]: <../>
+[magnifying_glass_24]: <../../../../../resources/images/navigation/magnifier.png>
+
+
 [tutorialdebugjaxenter]: <https://jaxenter.com/debugging-eclipse-ide-java-devs-135362.html>
 [tutorialdebugvogella]: <https://www.vogella.com/tutorials/EclipseDebugging/article.html>
