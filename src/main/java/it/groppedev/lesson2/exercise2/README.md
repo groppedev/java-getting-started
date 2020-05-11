@@ -10,6 +10,11 @@
 
 # Proposta di soluzione
 
+### Guide complete
+
+- [Debug con Eclipse - Jaxenter] (https://jaxenter.com/debugging-eclipse-ide-java-devs-135362.html)
+- [Debug con Eclipse - Vogella] (https://www.vogella.com/tutorials/EclipseDebugging/article.html)
+
 ### Aggiungere un Breakpoint
 Per aggiungere un _breakpoint_ ci si deve spostare sulla linea di codice di interesse ed utilizzare lo  _shortcut_ `CTRL+SHIFT+B`. In alternativa, tasto destro sul numero di linea e click sull'opzione `Toggle Breakpoint` <br/><br/>
 ![Breakpoint](../../../../../resources/images/debug/debug.breakpoint_x70.png) <br/>
