@@ -6,7 +6,7 @@
 ### Passaggi da eseguire:
 1. Aggiungere un _breakpoint_ alla linea 24 nel metodo `HelloPeopleDebug#calculateJavaAge`. In questo passaggio analizzare la sezione `Variables` ed il `return value`.
 2.  Aggiungere un _breakpoint_ alla linea 13 nel metodo `Printer#printSynch`. In questo passaggio analizzare la sezione `Call Stack`.
-3.  Aggiungere un _breakpoint_ alla linea 18 nel metodo `HelloPeopleDebug#main`. Successivamente aggiungere una `Expression` utilizzando il comando `watch` (Selezione variabile _greeting_ alla linea 17 tasto desto e poi watch). In questo passaggio analizzare la sezione `Expressions`
+3.  Aggiungere un _breakpoint_ alla linea 18 nel metodo `HelloPeopleDebug#main`. Successivamente aggiungere una `Expression` utilizzando il comando `watch` (Selezione variabile _greeting_ alla linea 17 tasto desto e poi watch). In questo passaggio analizzare la sezione `Expressions`.
 
 
 # Tutorial minimale sul Debug
@@ -60,6 +60,7 @@ Frame | Line
 ## Sezione `Expressions` <br/>
 
 ![DebugStep3-1](../../../../../resources/images/debug/debug.3.1_x70.png) <br/><br/>
+Il metodo `Greeting#toString()` permette la seguente visualizzazione nella sezione `Expressions`
 ![DebugStep3-2](../../../../../resources/images/debug/debug.3.2_x70.png) <br/>
 
 ```java
