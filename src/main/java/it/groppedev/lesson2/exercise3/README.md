@@ -41,9 +41,13 @@ public enum Language
 }
 ```
 
-********** Il testo del saluto da un costante diventa una proprietà dell'enumerato.
-********** Creare un servizio di stampa con differenti opzioni
+Differenti metodi di stampa
 
+Metodo | Descrizione
+------------ | -------------
+`Printer#printSynch(String messageToPrint, String person)` | Stampa sincrona nel _Thread Main_
+`Printer#printAsync(String messageToPrint, String person)` | Stampa asincrona con creazione di un nuovo _Thread_ per ogni invocazione
+`Printer#printAsyncLambda(String messageToPrint, String person)` | Stampa asincrona con creazione di un nuovo _Thread_ per ogni invocazione utilizzando la sintassi delle _Lambda Expressions_
 
 ### Passaggi da eseguire:
 1. Rinominare la classe `HelloPeople` in `HelloPeopleDebug`
