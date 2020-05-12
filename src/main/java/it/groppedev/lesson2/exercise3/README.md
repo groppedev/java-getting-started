@@ -34,8 +34,7 @@ public enum Language
 				return lang;
 			}
 		}
-		String errorMsg = String.format("Nessun linguaggio trovato per l'alias '%s'", 
-										languageAlias);
+		String errorMsg = String.format("Nessun linguaggio trovato per l'alias '%s'", languageAlias);
 		throw new IllegalArgumentException(errorMsg);
 	}
 }
