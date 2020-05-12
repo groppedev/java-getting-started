@@ -1,7 +1,7 @@
 # Lezione 2 - Esercizio 3
 
-> Nell'[esercizio precedente](../exercise2/), sono stati introdotte 3 differenti modalità per stampare il messaggio di saluto nella console. 
->In questo esercizio è richiesto di implementare il requisito di poter cambiare modalità di stampa del messaggio senza dovre cambiare il codice sorgente sfruttando la programmazione ad oggetti ed il polimorfismo.
+> Nell'[esercizio precedente](../exercise2/), sono state introdotte, 3 differenti modalità per stampare il messaggio di saluto nella console. 
+> In questo esercizio è richiesto di implementare il requisito di poter cambiare modalità di stampa del messaggio senza dovre cambiare il codice sorgente sfruttando la programmazione ad oggetti e polimorfismo.
 
 Per comodità è stato introdotto l'enumerato `Language`. In questo `Enum` è stato gestito anche il testo del saluto che non è più rappresentato con una costante per ogni linguaggio disponibile.
 
