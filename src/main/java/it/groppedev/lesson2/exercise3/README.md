@@ -1,9 +1,46 @@
-# Lezione 2 - Esercizio 1
+# Lezione 2 - Esercizio 3
 
-> Partendo dall'[esercizio 2 della lezione 1](../../lesson1/exercise2/), utilizzare Eclipse per svolgere alcune operazioni di refactor del codice e successivamente prendere confidenza con gli strumenti di DEBUG.
+> Nell'[esercizio precedente](../exercise2/), sono stati introdotte 3 differenti modalità per stampare il messaggio di saluto nella console. 
+>In questo esercizio è richiesto di implementare il requisito di poter cambiare modalità di stampa del messaggio senza dovre cambiare il codice sorgente sfruttando la programmazione ad oggetti ed il polimorfismo.
 
+Per comodità è stato introdotto l'enumerato `Language`. In questo `Enum` è stato gestito anche il testo del saluto che non è più rappresentato con una costante per ogni linguaggio disponibile.
 
-********** Language diventa un Enumerato
+```java
+public enum Language
+{
+	ITALIAN("it", "Ciao %s, sono JAVA ed ho %d anni!"),
+	ENGLISH("en", "Hello %s, I am JAVA and I am %d years old!");
+	
+	private final String message;
+	private final String alias;
+
+	private Language(String alias, String message)
+	{
+		this.message = message;
+		this.alias = alias;
+	}
+
+	public String getMessage()
+	{
+		return message;
+	}
+	
+	public static Language fromString(String languageAlias)
+	{
+		for(Language lang : Language.values())
+		{
+			if(lang.alias.equals(languageAlias))
+			{
+				return lang;
+			}
+		}
+		String errorMsg = String.format("Nessun linguaggio trovato per l'alias '%s'", 
+										languageAlias);
+		throw new IllegalArgumentException(errorMsg);
+	}
+}
+```
+
 ********** Il testo del saluto da un costante diventa una proprietà dell'enumerato.
 ********** Creare un servizio di stampa con differenti opzioni
 
