@@ -40,7 +40,7 @@ public enum Language
 }
 ```
 
-Differenti metodi di stampa
+### Differenti metodi di stampa
 
 Metodo | Descrizione
 ------------ | -------------
@@ -49,89 +49,76 @@ Metodo | Descrizione
 `Printer#printAsyncLambda(String messageToPrint, String person)` | Stampa asincrona con creazione di un nuovo _Thread_ per ogni invocazione utilizzando la sintassi delle _Lambda Expressions_
 
 ### Passaggi da eseguire:
-1. Rinominare la classe `HelloPeople` in `HelloPeopleDebug`
-2. Creare una classe `Constants` e spostare tutte le constanti in questa nuova classe
-3. Creare un apposito metodo `HelloPeopleDebug#selectLanguage` con il compito di selezionare la lingua da utilizzare (Attualmente viene letta la proprietÃ  di sistema `System.getProperty`)
-4. Creare un apposito metodo `HelloPeopleDebug#printGreetingByLanguage` che esegue il compito di stampare nella console il saluto per ogni persona in input
-5. Creare un apposito metodo `HelloPeopleDebug#calculateJavaAge` che calcola gli anni di Java
-6. Rimuovere la duplicazione nel metodo `HelloPeopleDebug#printGreetingByLanguage` creando un apposito metodo che esegue solo la stampa in console accettando come parametro il saluto a seconda del linguaggio
-7. Introdurre un apposito oggetto `Greeting` da passare come unico parametro al metodo `HelloPeopleDebug#printGreetingByLanguage`
-8. Incapsulare le variabili di istanza dell'oggetto `Greeting` creando appositi metodi `getter`
-9. Rendere tutte le variabili di istanza dell'oggetto `Greeting` immutabili utilizzando la keyword `final` una volta eseguita questa operazione cancellare tutti i metodi `setter`
-10. Generare automaticamente i metodi `Greeting#equals` e `Greeting#hashCode`
-11. Generare automaticamente il metodo `Greeting#toString`
-12. Creare un apposito metodo `Greeting#print` e spostare in questo metodo tutta la logica di stampa del messaggio
+1. Introdurre l'interfaccia `IPrintService` e creare il metodo astratto `print`. Prevedere per l'interfaccia un unico parametro di tipo `Greeting`
+2. Creare una classe concreta di implementazione per ogni tipologia di serivizio di stampa. Creare quindi le classi `PrintServiceSynch`, `PrintServiceAsync` e `PrintServiceAsyncLambda`. Ogni classe deve implementare l'interfaccia `IPrintService`.
+3. Tramite appositi strumenti di _refactor_ spostare il codice del vecchio servizio di stampa (`Printer`) nelle apposite nuove classi appena create.
+4. Creare un servizio chiamato `PrintService` che esponga un unico metodo `PrintService.print(Greeting greeting)`
+5. Nel servizio `PrintService` aggiungere la logica di selezione dell'implementazione corretta per il servizio di stampa basandosi sulla proprietà in input `print` (`System.getProperty("print", "sync")`). In questo caso il servizio di stampa svolge anche il compito di _Factory_ per la creazione degli oggetti di tipo `IPrintService`
+6. Se viene passato in input un tipo di servizio non valido, deve essere sollevata una specifica eccezione di tipo `IllegalArgumentException` che indichi all'utilizzatore quale sia stata la causa dell'errore.
+
 
 # Proposta di soluzione
 
-1. Codice originale di partenza
+1. Interfaccia `IPrintService`
 
 ```java
-public class HelloPeople
+public interface IPrintService
 {
-	private static final String USER_LANGUAGE_PROPERTY = "user.language";
-	private static final String ITALIAN_ALIAS = "it";
-	
-	private static final String ENGLISH_TXT = "Hello %s, I am JAVA and I am %d years old!";
-	private static final String ITALIAN_TXT = "Ciao %s, sono JAVA ed ho %d anni!";
-	
-	private static final int JAVA_YEAR_OF_BIRTH = 1995;
-
-	public static void main(String[] args)
-	{
-		int currentYear = java.time.Year.now().getValue();
-		int javaAge = currentYear - JAVA_YEAR_OF_BIRTH;
-		// -Duser.language=it
-		String language = System.getProperty(USER_LANGUAGE_PROPERTY);
-
-		// Massimo Marco Matteo
-		for(String person : args)
-		{
-			if(language.equals(ITALIAN_ALIAS))
-			{
-				System.out.println(String.format(ITALIAN_TXT, person, javaAge));
-			}
-			else
-			{
-				System.out.println(String.format(ENGLISH_TXT, person, javaAge));
-			}
-		}
-	}
+	void print(Greeting greeting);
 }
 ```
 
-2. Codice dopo il refactor della main class `HelloPeopleDebug`
+2. Creazione classi concrete `PrintServiceSynch`, `PrintServiceAsync` e `PrintServiceAsyncLambda`.
 
 ```java
-public class HelloPeopleDebug
+public class PrintServiceSynch implements IPrintService
 {
-	public static void main(String[] args)
+	@Override
+	public void print(Greeting greeting)
 	{
-		int javaAge = calculateJavaAge();
-		String language = selectLanguage();
-
-		// Massimo Marco Matteo
-		for(String person : args)
-		{
-			Greeting greeting = new Greeting(javaAge, language, person);
-			greeting.print();
-		}
-	}
-
-	private static int calculateJavaAge()
-	{
-		int currentYear = java.time.Year.now().getValue();
-		int javaAge = currentYear - Constants.JAVA_YEAR_OF_BIRTH;
-		return javaAge;
-	}
-
-	private static String selectLanguage()
-	{
-		// -Duser.language=it
-		String language = System.getProperty(Constants.USER_LANGUAGE_PROPERTY);
-		return language;
+		System.out.println(String.format("Thread '%s' nome '%s'", 
+				Thread.currentThread().getName(), greeting.getPerson()));
+		System.out.println(greeting.messageToPrint());
 	}
 }
+```
+```java
+public class PrintServiceAsync implements IPrintService
+{
+	@Override
+	public void print(Greeting greeting)
+	{
+		String threadName = "thread-print-" + greeting.getPersonLowerCase();
+		Thread printThread = new Thread(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				System.out.println(String.format("Thread '%s' nome '%s'", 
+						Thread.currentThread().getName(), greeting.getPerson()));
+				System.out.println(greeting.messageToPrint());
+			}
+		}, threadName);
+		printThread.start();
+	}
+}
+```
+```java
+public class PrintServiceAsyncLambda implements IPrintService
+{
+	@Override
+	public void print(Greeting greeting)
+	{
+		String threadName = "thread-print-" + greeting.getPersonLowerCase();
+		Thread printThread = new Thread(() ->  {
+			System.out.println(String.format("Thread '%s' nome '%s'", 
+					Thread.currentThread().getName(), greeting.getPerson()));
+			System.out.println(greeting.messageToPrint());
+		}, threadName);
+		printThread.start();
+	}
+}
+
 ```
 
 3. Codice dopo il refactor della classe `Constants`
