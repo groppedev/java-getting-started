@@ -68,7 +68,8 @@ public interface IPrintService
 }
 ```
 
-2. Creazione classi concrete `PrintServiceSynch`, `PrintServiceAsync` e `PrintServiceAsyncLambda`.
+2.  Creazione classi concrete `PrintServiceSynch`, `PrintServiceAsync` e `PrintServiceAsyncLambda`
+3.  Spostamento codice dalla classe `Printer` alle nuove implementazioni
 
 ```java
 public class PrintServiceSynch implements IPrintService
