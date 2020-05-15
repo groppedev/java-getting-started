@@ -109,7 +109,7 @@ public class Sampler implements Analyzable
 		
 		SwimmingResponse swimmingResponse = new SwimmingResponse();
 		swimmingResponse.setSwimming(balneabile);
-		swimmingResponse.setWaterQuality(averageWaterQuality.name());
+		swimmingResponse.setWaterQuality(averageWaterQuality);
 		return swimmingResponse;
 	}
 

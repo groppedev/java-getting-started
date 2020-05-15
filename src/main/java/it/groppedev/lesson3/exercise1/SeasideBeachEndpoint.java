@@ -18,7 +18,7 @@ import javax.ws.rs.core.Response;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import it.groppedev.lesson3.exercise1.model.BatterioEnterococcho;
+import it.groppedev.lesson3.exercise1.model.BatterioEnterococco;
 import it.groppedev.lesson3.exercise1.model.BatterioEscherichiaColi;
 import it.groppedev.lesson3.exercise1.model.Sampler;
 import it.groppedev.lesson3.exercise1.model.StabilimentoBalneare;
@@ -79,7 +79,7 @@ public class SeasideBeachEndpoint
 		StabilimentoBalneare stabilimento = new StabilimentoBalneare(year, location, beach);
 		
 		Sampler sampler = new Sampler(date);
-		sampler.addBatterio(new BatterioEnterococcho(enterococchi));
+		sampler.addBatterio(new BatterioEnterococco(enterococchi));
 		sampler.addBatterio(new BatterioEscherichiaColi(escherichiacoli));
 
 		ISamplerRepository repository = getSamplerRepository(stabilimento);

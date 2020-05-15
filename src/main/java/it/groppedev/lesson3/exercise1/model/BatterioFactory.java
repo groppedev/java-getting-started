@@ -7,7 +7,7 @@ public class BatterioFactory
 		switch (batterioEnum)
 		{
 		case ENTEROCOCCO:
-			return new BatterioEnterococcho(value);
+			return new BatterioEnterococco(value);
 		case ESCHERICHIACOLI:
 			return new BatterioEscherichiaColi(value);
 		default:

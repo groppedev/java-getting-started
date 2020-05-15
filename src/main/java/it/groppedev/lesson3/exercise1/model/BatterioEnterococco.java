@@ -1,12 +1,19 @@
 package it.groppedev.lesson3.exercise1.model;
 
-public class BatterioEnterococcho extends Batterio
+public class BatterioEnterococco extends Batterio
 {
-	public static final int LIMIT_MAX = 500;
-	public static final int LIMIT_MEDIUM = 50;
-	public static final int LIMIT_MIN = 5;
+	public static int LIMIT_MAX;
+	public static int LIMIT_MEDIUM;
+	public static int LIMIT_MIN;
 	
-	public BatterioEnterococcho(int value)
+	static
+	{
+		LIMIT_MAX = Integer.valueOf(System.getProperty("enterococco.max", "500"));
+		LIMIT_MEDIUM = Integer.valueOf(System.getProperty("enterococco.medium", "50"));
+		LIMIT_MIN = Integer.valueOf(System.getProperty("enterococco.min", "5"));
+	}
+	
+	public BatterioEnterococco(int value)
 	{
 		super(value, "enterococco");
 	}
