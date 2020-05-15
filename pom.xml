@@ -64,11 +64,18 @@
 			<artifactId>resteasy-cdi</artifactId>
 			<version>${resteasy.version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jackson2-provider -->
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
 		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jackson2-provider</artifactId>
-			<version>${resteasy.version}</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<!-- http://tutorials.jenkov.com/java-json/jackson-objectmapper.html#write-json-from-objects -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.11.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
@@ -87,17 +94,6 @@
 			<artifactId>junit-jupiter-engine</artifactId>
 			<version>5.6.2</version>
 			<scope>test</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20190722</version>
-		</dependency>
-		<dependency>
-			<groupId>io.swagger.core.v3</groupId>
-			<artifactId>swagger-jaxrs2</artifactId>
-			<version>2.1.1</version>
 		</dependency>
 	</dependencies>
 </project>

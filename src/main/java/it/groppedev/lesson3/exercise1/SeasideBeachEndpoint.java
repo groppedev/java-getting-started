@@ -13,6 +13,10 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import it.groppedev.lesson3.exercise1.model.BatterioEnterococcho;
 import it.groppedev.lesson3.exercise1.model.BatterioEscherichiaColi;
@@ -36,21 +40,24 @@ public class SeasideBeachEndpoint
 	 */
 	@GET
 	@Path("info")
-	@Produces(MediaType.APPLICATION_JSON)
-	public SwimmingResponse waterInfo(@PathParam("location") String location, 
-								  	  @PathParam("year") int year,
-								      @PathParam("beach") String beach,
-								      @QueryParam("id") String samplerId)
+	public Response waterInfo(@PathParam("location") String location, 
+			                  @PathParam("year") int year,
+							  @PathParam("beach") String beach,
+							  @QueryParam("id") String samplerId)
 	{
 		StabilimentoBalneare stabilimento = new StabilimentoBalneare(year, location, beach);
 		
 		ISamplerRepository repository = getSamplerRepository(stabilimento);
 		
 		Sampler sampler = repository.load(samplerId);
-		return sampler.analyze();
+		SwimmingResponse swimmingResponse = sampler.analyze();
+		
+		return Response.status(Response.Status.OK)
+					   .entity(toJSON(swimmingResponse))
+				       .type(MediaType.APPLICATION_JSON)
+				       .build();
 	}
 
-	
 	/**
 	 * URL: http://localhost:9091/seaside/lignano/2020/spiaggiacomunale/newsample
 	 * 		data=14052020&enterococchi=10&escherichiacoli=20
@@ -59,13 +66,13 @@ public class SeasideBeachEndpoint
 	@POST
 	@Path("newsample")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.TEXT_PLAIN)
 	public String newSample(@PathParam("location") String location, 
-						  @PathParam("year") int year,
-						  @PathParam("beach") String beach,
-						  @FormParam("data") String dateAsString,
-						  @FormParam("enterococchi") int enterococchi,
-						  @FormParam("escherichiacoli") int escherichiacoli) throws ParseException
+						    @PathParam("year") int year,
+						    @PathParam("beach") String beach,
+						    @FormParam("data") String dateAsString,
+						    @FormParam("enterococchi") int enterococchi,
+						    @FormParam("escherichiacoli") int escherichiacoli) throws ParseException
 	{
 		Date date = new SimpleDateFormat("ddMMyyyy").parse(dateAsString);
 		
@@ -84,5 +91,18 @@ public class SeasideBeachEndpoint
 	private static ISamplerRepository getSamplerRepository(StabilimentoBalneare stabilimento)
 	{
 		return new DataFileSamplerRepository(SeasideServerMain.dataDirectory(), stabilimento);
+	}
+	
+	private static String toJSON(SwimmingResponse swimmingResponse)
+	{
+		ObjectMapper objectMapper = new ObjectMapper();
+		try
+		{
+			return objectMapper.writeValueAsString(swimmingResponse);
+		} 
+		catch (JsonProcessingException e)
+		{
+			throw new IllegalStateException(e);
+		}
 	}
 }

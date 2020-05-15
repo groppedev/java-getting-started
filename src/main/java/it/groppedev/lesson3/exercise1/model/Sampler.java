@@ -107,7 +107,10 @@ public class Sampler implements Analyzable
 			averageWaterQuality = WaterQuality.selectByWeightFactor(mediaQualitaAcqua);
 		}
 		
-		return new SwimmingResponse(balneabile, averageWaterQuality.name());
+		SwimmingResponse swimmingResponse = new SwimmingResponse();
+		swimmingResponse.setSwimming(balneabile);
+		swimmingResponse.setWaterQuality(averageWaterQuality.name());
+		return swimmingResponse;
 	}
 
 	@Override

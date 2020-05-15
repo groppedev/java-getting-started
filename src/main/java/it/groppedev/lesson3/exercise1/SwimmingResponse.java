@@ -5,17 +5,11 @@ public class SwimmingResponse
 	private boolean isSwimming;
 	private String waterQuality;
 	
-	public SwimmingResponse(boolean isSwimming, String waterQuality)
-	{
-		this.isSwimming = isSwimming;
-		this.waterQuality = waterQuality;
-	}
-	
 	public boolean isSwimming()
 	{
 		return isSwimming;
 	}
-	public void setBalneabile(boolean isSwimming)
+	public void setSwimming(boolean isSwimming)
 	{
 		this.isSwimming = isSwimming;
 	}
@@ -26,5 +20,10 @@ public class SwimmingResponse
 	public void setWaterQuality(String waterQuality)
 	{
 		this.waterQuality = waterQuality;
+	}
+	@Override
+	public String toString()
+	{
+		return "SwimmingResponse [isSwimming=" + isSwimming + ", waterQuality=" + waterQuality + "]";
 	}
 }
