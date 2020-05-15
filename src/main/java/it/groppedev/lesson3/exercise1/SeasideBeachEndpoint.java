@@ -11,7 +11,15 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+
+import it.groppedev.lesson3.exercise1.model.BatterioEnterococcho;
+import it.groppedev.lesson3.exercise1.model.BatterioEscherichiaColi;
+import it.groppedev.lesson3.exercise1.model.Sampler;
+import it.groppedev.lesson3.exercise1.model.StabilimentoBalneare;
+import it.groppedev.lesson3.exercise1.repository.DataFileSamplerRepository;
+import it.groppedev.lesson3.exercise1.repository.ISamplerRepository;
 
 /**
  * Endpoint di tipo SINGLETON {@link SeasideApplication#getSingletons()}
@@ -23,24 +31,25 @@ import javax.ws.rs.core.MediaType;
 @Path("/{location}/{year}/{beach}")
 public class SeasideBeachEndpoint
 {
-	
-	private int counter;
-
 	/**
-	 * URL: http://localhost:9091/seaside/lignano/2020/spiaggiacomunale/info
+	 * URL: http://localhost:9091/seaside/lignano/2020/spiaggiacomunale/info?id=1111
 	 */
 	@GET
 	@Path("info")
-	@Produces({ MediaType.APPLICATION_JSON})
+	@Produces(MediaType.APPLICATION_JSON)
 	public SwimmingResponse waterInfo(@PathParam("location") String location, 
 								  	  @PathParam("year") int year,
-								      @PathParam("beach") String beach)
+								      @PathParam("beach") String beach,
+								      @QueryParam("id") String samplerId)
 	{
-		System.out.println(String.format("Hit Balenabilita' [%d] localita:=%s anno:=%s spiaggia:=%s",
-						   ++this.counter, location, year, beach));
+		StabilimentoBalneare stabilimento = new StabilimentoBalneare(year, location, beach);
 		
-		return new SwimmingResponse(true, "ECCELLENTE");
+		ISamplerRepository repository = getSamplerRepository(stabilimento);
+		
+		Sampler sampler = repository.load(samplerId);
+		return sampler.analyze();
 	}
+
 	
 	/**
 	 * URL: http://localhost:9091/seaside/lignano/2020/spiaggiacomunale/newsample
@@ -51,17 +60,29 @@ public class SeasideBeachEndpoint
 	@Path("newsample")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Date newSample(@PathParam("location") String location, 
+	public String newSample(@PathParam("location") String location, 
 						  @PathParam("year") int year,
 						  @PathParam("beach") String beach,
 						  @FormParam("data") String dateAsString,
 						  @FormParam("enterococchi") int enterococchi,
 						  @FormParam("escherichiacoli") int escherichiacoli) throws ParseException
 	{
-		System.out.println(String.format("Hit New Sample' [%d] localita:=%s anno:=%s spiaggia:=%s",
-						   ++this.counter, location, year, beach));
 		Date date = new SimpleDateFormat("ddMMyyyy").parse(dateAsString);
-		System.out.println(date);
-		return date;
+		
+		StabilimentoBalneare stabilimento = new StabilimentoBalneare(year, location, beach);
+		
+		Sampler sampler = new Sampler(date);
+		sampler.addBatterio(new BatterioEnterococcho(enterococchi));
+		sampler.addBatterio(new BatterioEscherichiaColi(escherichiacoli));
+
+		ISamplerRepository repository = getSamplerRepository(stabilimento);
+		repository.save(sampler);
+		
+		return sampler.getId();
+	}
+	
+	private static ISamplerRepository getSamplerRepository(StabilimentoBalneare stabilimento)
+	{
+		return new DataFileSamplerRepository(SeasideServerMain.dataDirectory(), stabilimento);
 	}
 }

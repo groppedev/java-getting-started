@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.attribute.FileAttribute;
 
 import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
 
@@ -16,14 +15,31 @@ public class SeasideServerMain
 	// "0.0.0.0" al posto di "localhost" per i containers
 	private static String SERVER_HOST = System.getProperty("org.jboss.resteasy.host", "localhost"); 
 
-	public static void main(String...args) throws IOException
+	private static Path dataDirectory;
+	
+	static
 	{
-		String dataFilesFolder = args.length > 0 ? args[0] : "seaside_data";
+		String dataFilesFolder = System.getProperty("datadirectory", "seaside_data");
 		// Directory corrente
 		Path currentRelativePath = Paths.get("");
-		Path dataDirectory = Files.createDirectories(currentRelativePath.resolve(dataFilesFolder));
-		System.out.println(String.format("DATA Directory -> '%s'", dataDirectory.toAbsolutePath().toFile()));
-		
+		try
+		{
+			dataDirectory = Files.createDirectories(currentRelativePath.resolve(dataFilesFolder));
+			System.out.println(String.format("DATA Directory -> '%s'", dataDirectory.toAbsolutePath().toFile()));
+		} 
+		catch (IOException e)
+		{
+			throw new RuntimeException(e);
+		}
+	}
+	
+	public static Path dataDirectory()
+	{
+		return dataDirectory;
+	}
+	
+	public static void main(String...args) throws IOException
+	{
 		startServer();
 	}
 	
